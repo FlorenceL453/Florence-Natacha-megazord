@@ -7,6 +7,6 @@
     --mauve: #751F84;
     --rose: #B50FB8;
     --bleuFonce:#191256;
-    --fontTitre:;
-    --fontTexte:;
+    --fontTitre:font-family:'devil-breeze', sans-serif;
+    --fontTexte: font-family: 'Noto Sans Display', sans-serif;
 }
