@@ -1,12 +1,26 @@
 /*https://coolors.co/b50fb8-2fa0d0-191256-751f84-07d5cb*/
 /*https://www.dafont.com/devil-breeze.font*/
 /*FUTURA BK BT*/
+
+/*Trouver comment résoudre ce problème ou trouver une autre typo*/
+@font-face {
+    src: url("../fonts/devil_breeze/devil_breeze_medium.ttf") format("ttf");
+    font-family: "Devil-Breeze";
+}
+
 :root {
     --turquoise: #07D5CB;
     --bleu: #2FA0D0;
     --mauve: #751F84;
     --rose: #B50FB8;
     --bleuFonce:#191256;
-    --fontTitre:font-family:'devil-breeze', sans-serif;
-    --fontTexte: font-family: 'Noto Sans Display', sans-serif;
+    --fontTitre: "Devil-Breeze", sans-serif;
+    --fontTexte: 'Noto Sans Display', sans-serif;
+}
+
+/*Google font fonctionne, l'autre fonctionne aussi, mais il y a un problème avec google chrome et microsoft edge: la typo ne fonctionne pas*/
+/*Ceci est un test*/
+h1 {
+    font-family: var(--fontTitre);
+    color: var(--mauve);
 }
