@@ -24,3 +24,6 @@ h1 {
     font-family: var(--fontTitre);
     color: var(--mauve);
 }
+p {
+    font-family: var(--fontTexte);
+}
