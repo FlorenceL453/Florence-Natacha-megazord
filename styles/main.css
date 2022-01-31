@@ -1,6 +1,5 @@
 /*https://coolors.co/b50fb8-2fa0d0-191256-751f84-07d5cb*/
 /*https://www.dafont.com/devil-breeze.font*/
-/*FUTURA BK BT*/
 
 /*Trouver comment résoudre ce problème ou trouver une autre typo*/
 @font-face {
@@ -14,7 +13,7 @@
     --mauve: #751F84;
     --rose: #B50FB8;
     --bleuFonce:#191256;
-    --fontTitre: "Devil-Breeze", sans-serif;
+    --fontTitre: "Devil-Breeze";
     --fontTexte: 'Noto Sans Display', sans-serif;
 }
 
