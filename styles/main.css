@@ -3,8 +3,12 @@
 
 /*Trouver comment résoudre ce problème ou trouver une autre typo*/
 @font-face {
-    src: url("/fonts/devil_breeze/devil_breeze_medium.ttf") format("ttf");
-    font-family: "Devil-Breeze";
+    font-family: 'DevilBreezeMedium';
+    src: url('../fonts/devil_breeze/DevilBreezeMedium.svg#DevilBreezeMedium') format('svg'),
+         url('../fonts/devil_breeze/DevilBreezeMedium.ttf') format('truetype'),
+         url('../fonts/devil_breeze/DevilBreezeMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 :root {
@@ -13,7 +17,7 @@
     --mauve: #751F84;
     --rose: #B50FB8;
     --bleuFonce:#191256;
-    --fontTitre: "Devil-Breeze";
+    --fontTitre: 'DevilBreezeMedium';
     --fontTexte: 'Noto Sans Display', sans-serif;
 }
 
@@ -22,20 +26,20 @@
 
 body p {
     font-family: var(--fontTexte);
-    font-size: 16px;
+    font-size: 18px;
 }
 .title-1{
-    font-family: "Devil-Breeze";
+    font-family: var(--fontTitre);
     color: var(--mauve);
     font-size: 50px;
 }
 .title-2{
     font-family: var(--fontTitre);
     color: var(--turquoise);
-    font-size: 35px;
+    font-size: 40px;
 }
 .title-3{
     font-family: var(--fontTitre);
     color: var(--rose);
-    font-size: 25px;
+    font-size: 30px;
 }
