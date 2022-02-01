@@ -21,7 +21,8 @@
     --fontTexte: 'Noto Sans Display', sans-serif;
 }
 
-/*Google font fonctionne, l'autre fonctionne aussi, mais il y a un problème avec google chrome et microsoft edge: la typo ne fonctionne pas*/
+/*Les 2 typos fonctionne. Je crois s'était un problème de compatibilité avec google chrome et ttf*/
+/*Les liens url dans le font-face sont bons. Ils trouvent la font et ne donne pas d'erreur dans la console.*/
 /*Ceci est un test*/
 
 body p {
