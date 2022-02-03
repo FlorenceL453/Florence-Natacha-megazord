@@ -1,1 +1,9 @@
 /*Styles de la page de discography*/
+@media (orientation: landscape){
+.section{
+    height: 16/9;
+}
+}
+.section{
+    background-color: aqua;
+}
