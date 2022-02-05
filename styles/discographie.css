@@ -17,13 +17,21 @@ body section{
 .section{
     height: 16/9;
 }
+@media screen and (min-width:1000px){
+.img1{
+    display:none;
+}
+.img2{
+    display: inline-block;
+    object-fit:contain;
+    object-position: 50% 50%;
+}
 }
 picture{
     display:inline-block;
     width:100%;
     height:100%;
-    background-color:turquoise;
-    
+    background-color:turquoise;   
 }
 .img1{
     object-fit:contain;
