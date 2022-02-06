@@ -31,7 +31,24 @@ body section{
     z-index:1;
     width:100%;
     height:100%;
-    background-image: linear-gradient(#234423,#191256);
+    background-image: linear-gradient(#234423,turquoise, 50%);
+}
+.container .row{
+    height:100%;
+}
+.col{
+    display:inline-block;
+}
+button{
+   border: none;
+   background-color: var(--rose);
+   color:white;
+}
+h1{
+    color:var(--rose);
+}
+p{
+    color:white;
 }
 @media (orientation: landscape){
     .section{
@@ -53,5 +70,5 @@ picture{
     display:inline-block;
     width:100%;
     height:100%;
-    background-color:turquoise;   
+    background-color:var(--bleuFonce);   
 }
