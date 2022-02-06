@@ -1,1 +1,46 @@
 /*Styles de la page d'accueil*/
+* {box-sizing: content-box;}
+/*Balise section prend toute la dimension de l'écran peut importe sa taille*/
+html, body {
+    position: relative;
+    overflow: hidden;
+    margin: 0px;
+    width: 100vw;
+    height: 100vh;
+}
+
+/*Voir ce que je peux faire pour donner une taille à la section sans rogner l'image de portrait*/
+/*Les images dans la balise picture prend toute la taille de la section?*/
+.sectionImageGroupe, .imgPortrait, .imgLandscape, .accueilContraste {
+    width: 100%;
+    height: 100%;
+}
+
+/*Mettre le filtre de couleur par dessus de la balise picture*/
+.accueilContraste {
+    position: absolute;
+    top: 0px;
+    background-color: var(--bleu);
+    opacity: 15%;
+}
+
+/*Couvrir la section avec l'image en portrait sans la déformer et ajuster sa position*/
+.imgPortrait {
+    object-fit: cover;
+    object-position: 0% 100%;
+}
+
+/*Cacher l'image landscape par défaut*/
+.imgLandscape {
+    display: none;
+    object-fit: cover;
+    object-position: 0% 100%;
+}
+
+/*Cacher l'image en portrait et afficher celle du landscape*/
+/*Faire en sorte que la hauteur de la section change à 56.25% de la largeur de l'écran*/
+@media (orientation: landscape) {
+    .sectionImageGroupe {height: 56.25vw;}
+    .imgPortrait { display: none;}
+    .imgLandscape { display: block;}
+}
