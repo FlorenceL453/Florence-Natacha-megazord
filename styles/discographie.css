@@ -19,7 +19,7 @@ body section{
 }
 .img1{
     display:block;
-    margin:auto;
+    margin: auto;
     object-fit:contain;
     object-position: 50% 50%;
 }
