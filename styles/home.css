@@ -22,6 +22,16 @@ html, body, .sectionImageGroupe {
     vertical-align: center;
 }*/
 
+/*Couleur du titre-1*/
+.title-1 {
+    color: var(--bleuFonce);
+}
+
+/*Couleur du texte de présentation*/
+p {
+    color: var(--turquoise);
+}
+
 /*Voir ce que je peux faire pour donner une taille à la section sans rogner l'image de portrait*/
 /*Les images dans la balise picture prend toute la taille de la section?*/
 .imgPortrait, .imgLandscape, .accueilContraste {
