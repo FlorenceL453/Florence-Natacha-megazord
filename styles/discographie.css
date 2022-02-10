@@ -63,6 +63,10 @@ p{
     bottom:20%;
     margin-left:10%;
 }
+.navbar{
+    background-color:var(--mauve);
+    width:100%;
+}
 @media (orientation: landscape){
     .section{
         height: 16/9;
