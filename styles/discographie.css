@@ -93,6 +93,8 @@ p{
 nav{
     background-color:var(--mauve);
     width:100%;
+    top:90vh;
+    z-index:2;
 }
 .navbar-brand{
     display:inline-block;
