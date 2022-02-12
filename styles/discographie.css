@@ -1,4 +1,31 @@
 /*Styles de la page de discography*/
+@font-face {
+    font-family: 'DevilBreezeMedium';
+    src: url('../fonts/devil_breeze/DevilBreezeMedium.svg#DevilBreezeMedium') format('svg'),
+         url('../fonts/devil_breeze/DevilBreezeMedium.ttf') format('truetype'),
+         url('../fonts/devil_breeze/DevilBreezeMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body p {
+    font-family: var(--fontTexte);
+    font-size: 18px;
+}
+.title-1{
+    font-family: var(--fontTitre);
+    color: white;
+    font-size: 50px;
+}
+.title-2{
+    font-family: var(--fontTitre);
+    color: var(--turquoise);
+    font-size: 40px;
+}
+.title-3{
+    font-family: var(--fontTitre);
+    color: var(--rose);
+    font-size: 30px;
+}
 html{
     width: 100%;
     height: 100%;
@@ -63,9 +90,17 @@ p{
     bottom:20%;
     margin-left:10%;
 }
-.navbar{
+nav{
     background-color:var(--mauve);
     width:100%;
+}
+.navbar-brand{
+    display:inline-block;
+    margin-right:75%;
+}
+.nav-item{
+    display:inline-block;
+    padding-right:20px;
 }
 @media (orientation: landscape){
     .section{
