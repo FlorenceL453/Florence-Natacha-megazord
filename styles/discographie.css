@@ -82,7 +82,7 @@ body section{
 .col{
     display:inline-block;
 }
-button{
+button a{
    border: none;
    background-color: var(--rose);
    color:white;
@@ -90,6 +90,12 @@ button{
     position:absolute;
     bottom:15%;
     margin-left:10%;
+    text-decoration: none;
+    margin:0px;
+}
+button a:hover{
+    text-decoration: none;  
+    color:white;
 }
 h1{
     color:var(--rose);
