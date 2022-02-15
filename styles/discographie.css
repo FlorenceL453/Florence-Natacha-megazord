@@ -7,6 +7,15 @@
     font-weight: normal;
     font-style: normal;
 }
+:root {
+    --turquoise: #07D5CB;
+    --bleu: #2FA0D0;
+    --mauve: #751F84;
+    --rose: #B50FB8;
+    --bleuFonce:#191256;
+    --fontTitre: 'DevilBreezeMedium';
+    --fontTexte: 'Noto Sans Display', sans-serif;
+}
 body p {
     font-family: var(--fontTexte);
     font-size: 18px;
@@ -26,23 +35,29 @@ body p {
     color: var(--rose);
     font-size: 30px;
 }
+.txt{
+    font-family: var(--fontTexte);
+    margin:0px;
+}
 html{
     width: 100%;
     height: 100%;
 }
-:root {
-    --turquoise: #07D5CB;
-    --bleu: #2FA0D0;
-    --mauve: #751F84;
-    --rose: #B50FB8;
-    --bleuFonce:#191256;
-    --fontTitre: 'DevilBreezeMedium';
-    --fontTexte: 'Noto Sans Display', sans-serif;
-}
+
 body section{
     display:inline-block;
     width:100%;
     height: 100%;
+}
+.logo{
+    font-family: var(--fontTitre);
+}
+.a{
+    text-decoration:none;
+    color: white;   
+}
+.a:hover{
+    color:white;
 }
 .img1{
     display:block;
@@ -101,9 +116,11 @@ footer{
     background-color:var(--mauve);
     width:100%;
     z-index:2;
+    position:absolute;
     padding:20px;
     margin-top:20px;
     margin-bottom:20px;
+    object-fit: contain;
 }
 .navbar-brand{
     display:inline-block;
