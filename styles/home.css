@@ -3,19 +3,19 @@
 /*Balise section prend toute la dimension de l'écran peut importe sa taille*/
 html, body, .sectionImageGroupe {
     position: relative;
-    overflow: hidden;
+    /*overflow: hidden;*/
     margin: 0px;
     width: 100vw;
     height: 100vh;
 }
 
 /*Aligner la colonne du texte au milieu de la page avec bootsrap*/
-.sectionImageGroupe {
+/*.sectionImageGroupe {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+}*/
 
 /*Prendre toute la taille de la section du héros*/
 .container, .row {
@@ -98,4 +98,18 @@ button:hover {
     .sectionImageGroupe {height: 56.25vw;}
     .imgPortrait { display: none;}
     .imgLandscape { display: block;}
+}
+
+nav {
+    background-color: var(--rose);
+    width: 100%;
+    height: 5%;
+}
+
+
+.title-1-logo {
+    font-family: var(--fontTitre);
+    font-size: 25px;
+    color: var(--bleuFonce);
+    text-shadow: 3px 3px var(--mauve);
 }
