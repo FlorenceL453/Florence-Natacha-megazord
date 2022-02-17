@@ -1,7 +1,7 @@
 /*Styles de la page d'accueil*/
 * {box-sizing: content-box;}
 /*Balise section prend toute la dimension de l'écran peut importe sa taille*/
-html, body, .sectionImageGroupe {
+html, body, .hero {
     position: relative;
     /*overflow: hidden;*/
     margin: 0px;
@@ -100,6 +100,7 @@ button:hover {
     .sectionImageGroupe {height: 56.25vw;}
 }
 
+/*La navbar défile jusqu'à ce qu'elle atteint le sommet de la page*/
 nav {
     background-color: var(--rose);
     width: 100%;
