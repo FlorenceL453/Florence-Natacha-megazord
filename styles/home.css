@@ -1,9 +1,14 @@
 /*Styles de la page d'accueil*/
 * {box-sizing: content-box;}
-/*Balise section prend toute la dimension de l'écran peut importe sa taille*/
-html, body, .hero {
+
+html, body {
+    margin: 0px;
+    width: 100%;
+}
+
+/*Balise du héro prend toute la dimension de l'écran peut importe sa taille*/
+.hero {
     position: relative;
-    /*overflow: hidden;*/
     margin: 0px;
     width: 100vw;
     height: 100vh;
@@ -105,6 +110,12 @@ nav {
     background-color: var(--rose);
     width: 100%;
     height: 5%;
+}
+
+/*Enlever les marges de côtés pour que le hamburger soit collé à gauche du navbar*/
+.navbar-toggler {
+    margin: 0px;
+    background-color: var(--mauve);
 }
 
 
