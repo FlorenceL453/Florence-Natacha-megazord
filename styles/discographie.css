@@ -38,7 +38,6 @@ body p {
 .txt{
     font-family: var(--fontTexte);
     margin:0px;
-    padding:0 0;
 }
 html{
     width: 100%;
@@ -138,6 +137,7 @@ nav{
 footer{
     background-color:var(--mauve);
     width:100%;
+    height: 25%;
     z-index:2;
     position:absolute;
     padding:20px;
@@ -163,4 +163,8 @@ picture{
 }
 .hero{
     position:relative;
+}
+.album1{
+    margin-right:20px;
+    margin-left:20px;
 }
