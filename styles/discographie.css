@@ -170,8 +170,32 @@ picture{
     margin-right:20px;
     margin-left:20px;
 }
+.album2{
+    margin-right:20px;
+    margin-left:20px;
+}
+.album3{
+    margin-right:20px;
+    margin-left:20px;
+}
 .imgcol{
     width: 100%;
-    height: 100%;
-    object-fit:contain;
+    margin-top: 20%;
+}
+@media(orientation:horizontal){
+    .album1 {
+        margin-right:40px;
+        margin-left:40px;
+        margin-top: 0;
+    }
+    .album2 {
+        margin-right:40px;
+        margin-left:40px;
+        margin-top: 0;
+    }
+    .album3 {
+        margin-right:40px;
+        margin-left:40px;
+        margin-top: 0;
+    }
 }
