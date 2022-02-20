@@ -1,17 +1,21 @@
 /*Styles de la page d'accueil*/
 * {box-sizing: border-box;}
 
+html {
+    height: 100%;
+}
+
 html, body {
     margin: 0px;
     width: 100%;
-    overflow-x: hidden;
 }
 
 /*Balise du héro prend toute la dimension de l'écran peut importe sa taille*/
+/*L'image dépassez à cause du 100vw*/
 .hero {
     position: relative;
     margin: 0px;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
 }
 
@@ -24,7 +28,7 @@ html, body {
 }*/
 
 /*Prendre toute la taille de la section du héros*/
-.container, .row {
+.sectionImageGroupe {
     position: absolute;
     top: 0px;
     height: 100%;
@@ -98,7 +102,7 @@ button:hover {
 /*Cacher l'image en portrait et afficher celle du landscape*/
 /*Faire en sorte que la hauteur de la section change à 56.25% de la largeur de l'écran*/
 @media (orientation: landscape) {
-    .sectionImageGroupe {height: 56.25vw;}
+    .hero {height: 56.25vw;}
 }
 
 /*La navbar défile jusqu'à ce qu'elle atteint le sommet de la page*/
@@ -114,19 +118,18 @@ nav {
     background-color: var(--mauve);
 }
 
-/*Logo du titre*/
+/*Logo du titre: ajout padding top pour séparer le titre de l'image du groupe*/
 .title-1-logo {
     font-family: var(--fontTitre);
     font-size: 25px;
     color: var(--bleuFonce);
     text-shadow: 3px 3px var(--mauve);
+    padding-top: 5%;
 }
 
-/*Pied de page*/
+/*Pied de page: source du problème d'alignement était un position: absolute et top:0px sur le container et le row.*/
 .footer {
-    position: absolute;
     width: 100%;
-    height: 50%;
     background-color: var(--rose);
     padding: 20px;
     margin-top: 20px;
@@ -135,14 +138,14 @@ nav {
 /*Par défaut, aligner le text et le lien dans le pied de page*/
 .text-footer, .lien-github {
     width: 100%;
-    margin: 0px;
-    padding: 0px;
+    margin: 0%;
+    padding: 0%;
     text-align: center;
 }
 
 /*Séparer le lien github des text-footer*/
 .lien-github {
-    margin: 0%;
+    margin: 15% 0%;
     text-decoration: none;
     color: var(--turquoise);
     text-shadow: 2px 2px var(--bleuFonce);
