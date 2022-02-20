@@ -25,6 +25,7 @@
 /*Les liens url dans le font-face sont bons. Ils trouvent la font et ne donne pas d'erreur dans la console.*/
 /*Ceci est un test*/
 
+/*Préparation des balises commun entre les pages*/
 body p {
     font-family: var(--fontTexte);
     font-size: 18px;
@@ -34,6 +35,14 @@ body p {
     color: var(--mauve);
     font-size: 50px;
 }
+
+.title-1-logo {
+    font-family: var(--fontTitre);
+    font-size: 25px;
+    color: var(--bleuFonce);
+    text-shadow: 3px 3px var(--mauve);
+}
+
 .title-2{
     font-family: var(--fontTitre);
     color: var(--turquoise);
@@ -43,4 +52,8 @@ body p {
     font-family: var(--fontTitre);
     color: var(--rose);
     font-size: 30px;
+}
+
+.footer {
+    background-color: var(--rose);
 }
