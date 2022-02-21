@@ -166,23 +166,36 @@ picture{
     position:relative;
 }
 .album1{
-    margin-right:20px;
-    margin-left:20px;
+    width:100vw;
+    margin-top:20px;
+    margin-bottom:20px;
+    padding:0px;
+    background-color:var(--rose);
 }
-.album1.txt{
-    color:var(--mauve);
+.album1,.txt{
+    color:var(white);
 }
 .album1 button{
     color:var(--mauve);
     position:absolute;
 }
 .album2{
-    margin-right:20px;
-    margin-left:20px;
+    margin-top:20px;
+    margin-bottom:20px;
+    padding:0px;
+    background-color:var(--bleuFonce);
+}
+.album2.txt{
+    color:var(--mauve);
 }
 .album3{
-    margin-right:20px;
-    margin-left:20px;
+    margin-top:20px;
+    margin-bottom:20px;
+    padding:0px;
+    background-color:var(--mauve);
+}
+.album3 .txt{
+    color:var(--mauve);
 }
 .imgcol{
     width: 100%;
