@@ -111,16 +111,6 @@ button{
     margin:0px;
     scroll-behavior: smooth;
 }
- button .btncontenue{
-    border: none;
-    background-color: var(--rose);
-    color:white;
-    z-index:2;
-     position:absolute;
-     text-decoration: none;
-     margin:0px;
-     scroll-behavior: smooth;
- }
 a:hover{
     text-decoration: none;  
     color:white;
@@ -178,6 +168,13 @@ picture{
 .album1{
     margin-right:20px;
     margin-left:20px;
+}
+.album1.txt{
+    color:var(--mauve);
+}
+.album1 button{
+    color:var(--mauve);
+    position:absolute;
 }
 .album2{
     margin-right:20px;
