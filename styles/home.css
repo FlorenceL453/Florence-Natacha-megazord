@@ -127,6 +127,12 @@ nav {
     padding-top: 5%;
 }
 
+/*Ajuster la taille de la barre latérale*/
+.barreLateral {
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
 /*Pied de page: source du problème d'alignement était un position: absolute et top:0px sur le container et le row.*/
 .footer {
     width: 100%;
