@@ -38,7 +38,6 @@ body p {
 .txt{
     font-family: var(--fontTexte);
     margin:0px;
-    color:var(--mauve);
 }
 html{
     width: 100%;
@@ -112,6 +111,16 @@ button{
     margin:0px;
     scroll-behavior: smooth;
 }
+ button .btncontenue{
+    border: none;
+    background-color: var(--rose);
+    color:white;
+    z-index:2;
+     position:absolute;
+     text-decoration: none;
+     margin:0px;
+     scroll-behavior: smooth;
+ }
 a:hover{
     text-decoration: none;  
     color:white;
