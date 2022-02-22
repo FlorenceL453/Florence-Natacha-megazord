@@ -98,7 +98,7 @@ html{
 .container-fluid .row{
     height:100%;
 }
-nav,a{
+section a {
    border: none;
    background-color: var(--rose);
    color:white;
@@ -113,6 +113,11 @@ nav,a{
 a:hover{
     text-decoration: none;  
     color:white;
+}
+nav a{
+    position:relative;
+    width:100%;
+    object-position: bottom;
 }
 h1{
     color:var(--rose);
@@ -170,7 +175,11 @@ picture{
     margin-bottom:20px;
     padding:0px;
 }
-.album1,.txt{
+.album1 a{
+    text-decoration: none;
+    background-color: var(--turquoise);
+}
+.album1 .txt{
     color:var(white);
 }
 .album1 button{
@@ -182,13 +191,21 @@ picture{
     margin-bottom:20px;
     padding:0px;
 }
-.album2.txt{
+.album2 .txt{
     color:var(--mauve);
+}
+.album2 a{
+    text-decoration: none;
+    background-color: var(--turquoise);
 }
 .album3{
     margin-top:20px;
     margin-bottom:20px;
     padding:0px;
+}
+.album3 a{
+    text-decoration: none;
+    background-color: var(--turquoise);
 }
 .album3 .txt{
     color:var(--mauve);
