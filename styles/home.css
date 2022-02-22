@@ -52,8 +52,8 @@ body {
     text-shadow: 3px 3px var(--bleuFonce);
 }
 
-/*Couleur du texte de présentation*/
-p {
+/*Couleur du texte de présentation et du texte du footer*/
+.text-header, .text-footer {
     color: var(--turquoise);
     text-shadow: 2px 2px var(--bleuFonce);
 }
@@ -152,19 +152,46 @@ nav {
     width: 100%;
 }
 
+/*Styliser les cartes*/
+.card-body {
+    background-color: var(--bleuFonce);
+    color: var(--bleu);
+    width: 100%;
+}
+
 /*L'image du membre prend toute l'espace dans la carte*/
 .carteMembre img {
     width: 100%;
     height: 100%;
 }
 
+.nomMembre {
+    font-family: var(--fontTitre);
+    color: var(--mauve);
+    text-shadow: 2px 2px var(--rose);
+}
+
+.description {
+    color: var(--turquoise);
+}
+/*Fond du footer de la carte*/
+.card-footer {
+    background-color: var(--bleuFonce);
+    width: 100%;
+}
+
 /*Le styliser comme un bouton*/
 .lienSavoirPlus {
     width: 100%;
-    background-color: var(--bleuFonce);
+    background-color: var(--mauve);
     text-decoration: none;
+    color: var(--bleu);
+    padding: 1% 30%;
+    text-align: center;
+}
+/*État de hover*/
+.lienSavoirPlus:hover {
     color: var(--turquoise);
-    padding: 10px;
 }
 
 /*Pied de page: source du problème d'alignement était un position: absolute et top:0px sur le container et le row.*/
