@@ -59,7 +59,7 @@ body {
 }
 
 /*Mise en page du bouton en savoir plus*/
-button {
+.btn-primary {
     margin: 5% 15%;
     padding: 0% 25%;
     color: var(--bleu);
@@ -68,7 +68,7 @@ button {
     /*border-radius: 50%;*/
 }
 /*Mise en page du hover*/
-button:hover {
+.btn-primary:hover {
     color: var(--turquoise);
     background-color: var(--mauve);
     border: inset var(--rose);
@@ -186,8 +186,8 @@ nav {
     background-color: var(--mauve);
     text-decoration: none;
     color: var(--bleu);
-    padding: 1% 30%;
-    text-align: center;
+    /*padding: 1% 30%;
+    text-align: center;*/
 }
 /*État de hover*/
 .lienSavoirPlus:hover {
@@ -207,7 +207,6 @@ nav {
     width: 100%;
     margin: 0%;
     padding: 0%;
-    text-align: center;
 }
 
 /*Séparer le lien github des text-footer*/
