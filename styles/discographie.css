@@ -98,8 +98,7 @@ html{
 .container-fluid .row{
     height:100%;
 }
-
-button{
+nav,a{
    border: none;
    background-color: var(--rose);
    color:white;
