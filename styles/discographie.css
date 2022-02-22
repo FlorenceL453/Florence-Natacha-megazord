@@ -98,8 +98,7 @@ html{
 .container-fluid .row{
     height:100%;
 }
-
-button{
+nav,a{
    border: none;
    background-color: var(--rose);
    color:white;
@@ -170,7 +169,6 @@ picture{
     margin-top:20px;
     margin-bottom:20px;
     padding:0px;
-    background-color:var(--rose);
 }
 .album1,.txt{
     color:var(white);
@@ -183,7 +181,6 @@ picture{
     margin-top:20px;
     margin-bottom:20px;
     padding:0px;
-    background-color:var(--bleuFonce);
 }
 .album2.txt{
     color:var(--mauve);
@@ -192,7 +189,6 @@ picture{
     margin-top:20px;
     margin-bottom:20px;
     padding:0px;
-    background-color:var(--mauve);
 }
 .album3 .txt{
     color:var(--mauve);
