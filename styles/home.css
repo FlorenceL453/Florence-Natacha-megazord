@@ -60,11 +60,12 @@ p {
 
 /*Mise en page du bouton en savoir plus*/
 button {
-    margin: 0% 15%;
+    margin: 5% 15%;
     padding: 0% 25%;
     color: var(--bleu);
     background-color: var(--bleuFonce);
     border: outset var(--mauve);
+    /*border-radius: 50%;*/
 }
 /*Mise en page du hover*/
 button:hover {
@@ -135,7 +136,6 @@ nav {
 /*Ajuster la taille de la barre latérale*/
 .barreLateral {
     width: 100%;
-    scroll-behavior: smooth;
 }
 
 /*Prendre toute la largeur et la hauteur du parent*/
@@ -148,7 +148,7 @@ nav {
 .carteMembre {
     margin: 10px 0px;
     padding: 0px;
-    height: 65%;
+    /*height: 65%;*/
     width: 100%;
 }
 
