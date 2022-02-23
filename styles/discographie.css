@@ -175,6 +175,9 @@ picture{
     margin-bottom:20px;
     padding:0px;
 }
+.album1 img{
+    margin-top: 20px;
+}
 .album1 a{
     text-decoration: none;
     background-color: var(--turquoise);
@@ -191,6 +194,9 @@ picture{
     margin-bottom:20px;
     padding:0px;
 }
+.album2 img{
+    margin-top: 20px;
+}
 .album2 .txt{
     color:var(--mauve);
 }
@@ -203,16 +209,15 @@ picture{
     margin-bottom:20px;
     padding:0px;
 }
+.album3 img{
+    margin-top: 20px;
+}
 .album3 a{
     text-decoration: none;
     background-color: var(--turquoise);
 }
 .album3 .txt{
     color:var(--mauve);
-}
-.imgcol{
-    width: 100%;
-    margin-top: 20%;
 }
 @media(orientation:horizontal){
     .album1 {
