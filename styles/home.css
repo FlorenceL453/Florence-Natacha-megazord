@@ -150,6 +150,7 @@ nav {
     padding: 0px;
     /*height: 65%;*/
     width: 100%;
+    background-color: var(--mauve);
 }
 
 /*Styliser les cartes*/
