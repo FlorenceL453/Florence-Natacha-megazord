@@ -231,3 +231,11 @@ picture{
         margin-top: 0;
     }
 }
+footer a{
+    text-decoration: none;
+    color:white;
+}
+.center{
+    width:100%;
+    height:100%;
+}
