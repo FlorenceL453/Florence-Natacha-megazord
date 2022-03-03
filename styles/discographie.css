@@ -179,6 +179,9 @@ picture{
 }
 .album1 img{
     margin-top: 20px;
+    max-width:100%;
+    height: auto;
+
 }
 .album1 a{
     text-decoration: none;
@@ -198,6 +201,8 @@ picture{
 }
 .album2 img{
     margin-top: 20px;
+    max-width:100%;
+    height: auto;
 }
 .album2 .txt{
     color:var(--mauve);
@@ -213,6 +218,8 @@ picture{
 }
 .album3 img{
     margin-top: 20px;
+    max-width:100%;
+    height: auto;
 }
 .album3 a{
     text-decoration: none;
