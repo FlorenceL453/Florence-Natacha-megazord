@@ -87,18 +87,10 @@ html{
 .un{
     height:100vw;
 }
-.container-fluid{
-    position:absolute;
-    top:0;
-    bottom: 0;
-    left:0;
-    right:0;
-    z-index: 3;
-}
-.container-fluid .row{
+.container .row{
     height:100%;
 }
-section a {
+.hero a {
    border: none;
    background-color: var(--rose);
    color:white;
@@ -109,6 +101,14 @@ section a {
     text-decoration: none;
     margin:0px;
     scroll-behavior: smooth;
+}
+section .btn{
+    border: none;
+   background-color: var(--rose);
+   z-index:2;
+   position:absolute;
+   bottom:40px;
+   text-decoration: none;
 }
 a:hover{
     text-decoration: none;  
@@ -144,10 +144,12 @@ footer{
     width:100%;
     height: 25%;
     z-index:2;
-    position:absolute;
+    position:relative;
     padding:20px;
     margin-top:20px;
     margin-bottom:20px;
+    margin-left: 0;
+    margin-right:0;
     object-fit: contain;
 }
 .img3d{
