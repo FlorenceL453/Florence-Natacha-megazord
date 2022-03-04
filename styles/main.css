@@ -30,7 +30,7 @@ body p {
     font-family: var(--fontTexte);
     font-size: 18px;
 }
-.title-1{
+.title-1 {
     font-family: var(--fontTitre);
     color: var(--mauve);
     font-size: 50px;
@@ -43,15 +43,24 @@ body p {
     text-shadow: 3px 3px var(--mauve);
 }
 
-.title-2{
+.title-2 {
     font-family: var(--fontTitre);
     color: var(--turquoise);
     font-size: 40px;
 }
-.title-3{
+
+/*Sous-titre dans la section principale de la page*/
+.title-3 {
     font-family: var(--fontTitre);
-    color: var(--rose);
+    color: var(--mauve);
+    text-shadow: 2px 2px var(--rose);
     font-size: 30px;
+}
+/*Variante du sous-titre dans la section principale de la page*/
+.title-4 {
+    font-family: var(--fontTitre);
+    color: var(--bleu);
+    font-size: 25px;
 }
 
 .footer {
