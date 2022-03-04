@@ -195,6 +195,25 @@ nav {
     color: var(--turquoise);
 }
 
+/*Mettre la taille du div qui contient le iframe*/
+.divIframe {
+    aspect-ratio: 16 / 9;
+}
+
+/*Backup si le aspect-ratio ne marche pas (anciens version des navigateurs)*/
+@supports not (aspect-ratio: 16 / 9) {
+    .divIframe::before {
+        float: left;
+        padding-top: 56.25%;
+        content: '';
+    }
+    .divIframe::after {
+        display: block;
+        content: '';
+        clear: both;
+    }
+}
+
 /*Pied de page: source du problème d'alignement était un position: absolute et top:0px sur le container et le row.*/
 .footer {
     width: 100%;
