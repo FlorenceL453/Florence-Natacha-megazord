@@ -242,3 +242,20 @@ nav {
     color: var(--turquoise);
     text-shadow: 2px 2px var(--bleuFonce);
 }
+
+/*Arrière-plan bleuFonce comme les cartes*/
+.modal-header, .modal-body {
+    background-color: var(--bleuFonce);
+}
+
+/*État de survole pour les noms dans le footer*/
+.nom:hover {
+    color: var(--bleu);
+}
+
+/*Centrer horizontalement l'image du modal de chaque étudiant et centrer celle-ci à l'aide de margin*/
+.imgModal {
+    margin: 0px 75px;
+    width: 300px;
+    height: 100%;
+}

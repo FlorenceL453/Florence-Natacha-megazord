@@ -26,9 +26,11 @@
 /*Ceci est un test*/
 
 /*Préparation des balises commun entre les pages*/
-body p {
+body p, a{
     font-family: var(--fontTexte);
     font-size: 18px;
+    color: var(--turquoise);
+    text-shadow: 2px 2px var(--bleuFonce);
 }
 .title-1 {
     font-family: var(--fontTitre);
@@ -65,4 +67,12 @@ body p {
 
 .footer {
     background-color: var(--rose);
+}
+
+/*S'assurer que les noms dans le footer aillent le même style qu'avant*/
+.text-footer {
+    font-family: var(--fontTexte);
+    font-size: 18px;
+    color: var(--turquoise);
+    text-shadow: 2px 2px var(--bleuFonce);
 }
