@@ -217,3 +217,9 @@ nav {
     color: var(--turquoise);
     text-shadow: 2px 2px var(--bleuFonce);
 }
+
+/*Garder le même style pour l'état de survole du lien*/
+.lien-github:hover {
+    color: var(--turquoise);
+    text-shadow: 2px 2px var(--bleuFonce);
+}
