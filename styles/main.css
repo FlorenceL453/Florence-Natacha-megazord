@@ -26,11 +26,13 @@
 /*Ceci est un test*/
 
 /*Préparation des balises commun entre les pages*/
-body p {
+body p, a{
     font-family: var(--fontTexte);
     font-size: 18px;
+    color: var(--turquoise);
+    text-shadow: 2px 2px var(--bleuFonce);
 }
-.title-1{
+.title-1 {
     font-family: var(--fontTitre);
     color: var(--mauve);
     font-size: 50px;
@@ -43,17 +45,34 @@ body p {
     text-shadow: 3px 3px var(--mauve);
 }
 
-.title-2{
+.title-2 {
     font-family: var(--fontTitre);
     color: var(--turquoise);
     font-size: 40px;
 }
-.title-3{
+
+/*Sous-titre dans la section principale de la page*/
+.title-3 {
     font-family: var(--fontTitre);
-    color: var(--rose);
+    color: var(--mauve);
+    text-shadow: 2px 2px var(--rose);
     font-size: 30px;
+}
+/*Variante du sous-titre dans la section principale de la page*/
+.title-4 {
+    font-family: var(--fontTitre);
+    color: var(--bleu);
+    font-size: 25px;
 }
 
 .footer {
     background-color: var(--rose);
+}
+
+/*S'assurer que les noms dans le footer aillent le même style qu'avant*/
+.text-footer {
+    font-family: var(--fontTexte);
+    font-size: 18px;
+    color: var(--turquoise);
+    text-shadow: 2px 2px var(--bleuFonce);
 }

@@ -195,6 +195,25 @@ nav {
     color: var(--turquoise);
 }
 
+/*Mettre la taille du div qui contient le iframe*/
+.divIframe {
+    aspect-ratio: 16 / 9;
+}
+
+/*Backup si le aspect-ratio ne marche pas (anciens version des navigateurs)*/
+@supports not (aspect-ratio: 16 / 9) {
+    .divIframe::before {
+        float: left;
+        padding-top: 56.25%;
+        content: '';
+    }
+    .divIframe::after {
+        display: block;
+        content: '';
+        clear: both;
+    }
+}
+
 /*Pied de page: source du problème d'alignement était un position: absolute et top:0px sur le container et le row.*/
 .footer {
     width: 100%;
@@ -216,4 +235,27 @@ nav {
     text-decoration: none;
     color: var(--turquoise);
     text-shadow: 2px 2px var(--bleuFonce);
+}
+
+/*Garder le même style pour l'état de survole du lien*/
+.lien-github:hover {
+    color: var(--turquoise);
+    text-shadow: 2px 2px var(--bleuFonce);
+}
+
+/*Arrière-plan bleuFonce comme les cartes*/
+.modal-header, .modal-body {
+    background-color: var(--bleuFonce);
+}
+
+/*État de survole pour les noms dans le footer*/
+.nom:hover {
+    color: var(--bleu);
+}
+
+/*Centrer horizontalement l'image du modal de chaque étudiant et centrer celle-ci à l'aide de margin*/
+.imgModal {
+    margin: 0px 75px;
+    width: 300px;
+    height: 100%;
 }
