@@ -222,9 +222,9 @@ nav {
     margin-top: 20px;
 }
 
+
 /*Par défaut, aligner le text et le lien dans le pied de page*/
 .text-footer, .lien-github {
-    width: 100%;
     margin: 0%;
     padding: 0%;
 }
