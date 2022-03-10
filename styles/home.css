@@ -195,6 +195,11 @@ nav {
     color: var(--turquoise);
 }
 
+/*Séparer la section de la vidéo de celle des membres du groupe*/
+.video {
+    margin-top: 20px;
+}
+
 /*Mettre la taille du div qui contient le iframe*/
 .divIframe {
     aspect-ratio: 16 / 9;
@@ -245,8 +250,14 @@ nav {
 
 /*Arrière-plan bleuFonce comme les cartes*/
 .modal-header, .modal-body {
-    background-color: var(--bleuFonce);
+    background-color: white;
 }
+
+/*Changer la couleur du X dans la fenêtre du modal*/
+/*.btn-close {
+    color: var(--rose);
+    background-color: var(--mauve);
+}*/
 
 /*État de survole pour les noms dans le footer*/
 .nom:hover {
