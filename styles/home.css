@@ -250,8 +250,14 @@ nav {
 
 /*Arrière-plan bleuFonce comme les cartes*/
 .modal-header, .modal-body {
-    background-color: var(--bleuFonce);
+    background-color: white;
 }
+
+/*Changer la couleur du X dans la fenêtre du modal*/
+/*.btn-close {
+    color: var(--rose);
+    background-color: var(--mauve);
+}*/
 
 /*État de survole pour les noms dans le footer*/
 .nom:hover {
