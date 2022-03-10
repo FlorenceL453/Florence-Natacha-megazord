@@ -195,6 +195,11 @@ nav {
     color: var(--turquoise);
 }
 
+/*Séparer la section de la vidéo de celle des membres du groupe*/
+.video {
+    margin-top: 20px;
+}
+
 /*Mettre la taille du div qui contient le iframe*/
 .divIframe {
     aspect-ratio: 16 / 9;
