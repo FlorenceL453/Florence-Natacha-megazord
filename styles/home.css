@@ -194,6 +194,37 @@ nav {
     color: var(--turquoise);
 }
 
+/*Séparer la section du carrousel de celle des cartes*/
+.Carrousel {
+    margin-top: 20px;
+}
+
+/*Aspect ratio et hauteur de chaque slide*/
+.swiper-slide {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    height: 500px;
+}
+
+/*Backup si le aspect-ratio ne marche pas (anciens version des navigateurs)*/
+@supports not (aspect-ratio: 16 / 9) {
+    .swiper-slide::before {
+        float: left;
+        padding-top: 56.25%;
+        content: '';
+    }
+    .swiper-slide::after {
+        display: block;
+        content: '';
+        clear: both;
+    }
+}
+
+.imgPromo {
+    width: 100%;
+    object-fit: cover;
+}
+
 /*Séparer la section de la vidéo de celle des membres du groupe*/
 .video {
     margin-top: 20px;
