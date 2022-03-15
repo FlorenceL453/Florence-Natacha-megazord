@@ -160,6 +160,9 @@ footer{
     margin-right:0;
     object-fit: contain;
 }
+footer p{
+    color:white;
+}
 .img3d{
     width:100%;
     height:100%;
