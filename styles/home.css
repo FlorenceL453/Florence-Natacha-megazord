@@ -226,9 +226,28 @@ nav {
 
 /*L'image prend 100% du swipper-slide*/
 .imgPromo {
-    max-width: 100%;
-    height: auto;
+    /*max-width: 100%;
+    height: auto;*/
     object-fit: cover;
+}
+
+/*Changer la couleur de la bordure arrondi*/
+.img-thumbnail {
+    background-color: var(--rose);
+    border-color: var(--bleuFonce);
+}
+
+/*Changer l'apparence des points réguliers et celui qui est active*/
+.swiper-pagination-bullet {
+    background-color: var(--rose);
+    opacity: 1;
+    width: 1rem;
+    height: 1rem;
+}
+
+/*Changer les ronds en lozanges si possible*/
+.swiper-pagination-bullet-active {
+    background-color: var(--turquoise);
 }
 
 /*Séparer la section de la vidéo de celle des membres du groupe*/

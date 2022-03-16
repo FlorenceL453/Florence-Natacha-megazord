@@ -126,18 +126,19 @@
             <div class="col-12 col-lg-9 swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img src="img/img_promo1.jpg" class="img-fluid imgPromo" alt="Image Promotionnelle Evolve"/>
+                        <img src="img/img_promo1.jpg" class="img-fluid img-thumbnail imgPromo" alt="Image Promotionnelle Evolve"/>
                     </div>
                     <div class="swiper-slide">
-                        <img src="img/img_promo2.jpg" class="img-fluid imgPromo" alt="Image Promotionnelle"/>
+                        <img src="img/img_promo2.jpg" class="img-fluid img-thumbnail imgPromo" alt="Image Promotionnelle"/>
                     </div>
                     <div class="swiper-slide">
-                        <img src="img/img_promo3.jpg" class="img-fluid imgPromo" alt="Image Promotionnelle Whatever It Takes"/>
+                        <img src="img/img_promo3.jpg" class="img-fluid img-thumbnail imgPromo" alt="Image Promotionnelle Whatever It Takes"/>
                     </div>
                     <div class="swiper-slide">
-                        <img src="img/img_promo4.jpg" class="img-fluid imgPromo" alt="Image Promotionnelle Demons"/>
+                        <img src="img/img_promo4.jpg" class="img-fluid img-thumbnail imgPromo" alt="Image Promotionnelle Demons"/>
                     </div>
                 </div>
+                <div class="swiper-pagination"></div>
             </div>
         </section>
         <section class="row justify-content-end video">
@@ -198,7 +199,11 @@
 
     <!--Initialise Swiper-->
     <script>
-        var swiper = new Swiper(".swiper", {});
+        var swiper = new Swiper(".swiper", {
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
     </script>
 </body>
 </html>
