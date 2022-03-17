@@ -124,9 +124,9 @@ html{
 .un{
     height:100vw;
 }
-.container .row{
+/*.container .row{
     height:100%;
-}
+}*/
 .hero a {
    border: none;
    background-color: var(--rose);
@@ -208,7 +208,7 @@ picture{
     position:relative;
 }
 .album1{
-    width:100vw;
+    width:100%;
     margin-top:20px;
     margin-bottom:20px;
     padding:0px;
