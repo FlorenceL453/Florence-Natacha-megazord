@@ -1,323 +1,274 @@
 /*Styles de la page de discography*/
-@font-face {
-    font-family: 'DevilBreezeMedium';
-    src: url('../fonts/devil_breeze/DevilBreezeMedium.svg#DevilBreezeMedium') format('svg'),
-         url('../fonts/devil_breeze/DevilBreezeMedium.ttf') format('truetype'),
-         url('../fonts/devil_breeze/DevilBreezeMedium.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+.txt {
+  font-family: var(--fontTexte);
+  margin: 0px;
 }
-:root {
-    --turquoise: #07D5CB;
-    --bleu: #2FA0D0;
-    --mauve: #751F84;
-    --rose: #B50FB8;
-    --bleuFonce:#191256;
-    --fontTitre: 'DevilBreezeMedium';
-    --fontTexte: 'Noto Sans Display', sans-serif;
-}
-body{
-    background-color: var(--mauve);
-}
-body p {
-    font-family: var(--fontTexte);
-    font-size: 18px;
-}
-.title-1{
-    font-family: var(--fontTitre);
-    color: white;
-    font-size: 50px;
-}
-.title-2{
-    font-family: var(--fontTitre);
-    color: var(--turquoise);
-    font-size: 40px;
-}
-.title-3{
-    font-family: var(--fontTitre);
-    color: var(--rose);
-    font-size: 30px;
-}
-.txt{
-    font-family: var(--fontTexte);
-    margin:0px;
-}
-html{
-    width: 100%;
-    height: 100%;
+html {
+  width: 100%;
+  height: 100%;
 }
 
 .hero,
-.swiper{
-    width:100vw;
-    height: 100vh;
+.swiper {
+  width: 100vw;
+  height: 100vh;
 }
-.logo{
-    font-family: var(--fontTitre);
+
+.a {
+  text-decoration: none;
+  color: white;
 }
-.a{
-    text-decoration:none;
-    color: white;   
+.a:hover {
+  color: white;
 }
-.a:hover{
-    color:white;
+.img1 {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  object-fit: contain;
+  object-position: 45% 0%;
 }
-.img1{
-   
-    width:100%;
-    height: 100%;
-    margin: 0 auto;
-    object-fit:contain;
-    object-position: 45% 0%;
-    
-    
+.img6 {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  object-fit: contain;
+  object-position: 45% 0%;
 }
-.img6{
-    width:100%;
-    height:100%;
-    margin: 0 auto;
-    object-fit:contain;
-    object-position: 45% 0%;
+.img5 {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  object-fit: contain;
+  object-position: 45% 0%;
 }
-.img5{
-    width:100%;
-    height:100%;
-    margin: 0 auto;
-    object-fit:contain;
-    object-position: 45% 0%;
+.img4 {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  object-fit: contain;
+  object-position: 45% 0%;
 }
-.img4{
-    width:100%;
-    height:100%;
-    margin: 0 auto;
-    object-fit:contain;
-    object-position: 45% 0%;
+.img3 {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  object-fit: contain;
+  object-position: 45% 0%;
 }
-.img3{
-    width:100%;
-    height:100%;
-    margin: 0 auto;
-    object-fit:contain;
-    object-position: 45% 0%;
+.img2 {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: 45% 0%;
 }
-.img2{
-    margin: 0 auto;
-    width:100%;
-    height: 100%;
-    object-fit:contain;
-    object-position: 45% 0%;
+.swipper {
+  width: 100%;
+  height: 100%;
 }
-.swipper{
-    width:100%;
-    height:100%;
+.contraste {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(117, 31, 132, 0.75));
 }
-.contraste{
-    position:absolute;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    z-index:1;
-    width:100%;
-    height:100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(117,31,132,0.75));
-}
-.un{
-    height:100vw;
+.un {
+  height: 100vw;
 }
 /*.container .row{
     height:100%;
 }*/
 .hero a {
-   border: none;
-   background-color: var(--rose);
-   color:white;
-   z-index:2;
-    position:absolute;
-    bottom:15%;
-    margin-left:10%;
-    text-decoration: none;
-    margin:0px;
-    scroll-behavior: smooth;
+  border: none;
+  background-color: var(--rose);
+  color: white;
+  z-index: 2;
+  position: absolute;
+  bottom: 15%;
+  margin-left: 10%;
+  text-decoration: none;
+  margin: 0px;
+  scroll-behavior: smooth;
 }
-.hero .btn{
-    border: none;
-   background-color: var(--rose);
-   z-index:2;
-   position:absolute;
-   bottom:40px;
-   text-decoration: none;
+.hero .btn {
+  border: none;
+  color: var(--bleu);
+  background-color: var(--rose);
+  z-index: 2;
+  position: absolute;
+  bottom: 40px;
+  text-decoration: none;
 }
-.hero .btn:hover{
-    text-decoration: none;  
-    color:white;
+.hero .btn:hover {
+  text-decoration: none;
+  color: var(--turquoise);
 }
-nav a{
-    position:relative;
-    width:100%;
-    object-position: bottom;
+nav a {
+  position: relative;
+  width: 100%;
+  object-position: bottom;
 }
-h1{
-    color:var(--rose);
-    z-index:2;
-    position:absolute;
-    bottom:25%;
-    margin-left:10%;
+h1 {
+  color: var(--rose);
+  z-index: 2;
+  position: absolute;
+  bottom: 25%;
+  margin-left: 10%;
 }
-p{
-    color:white;
-    z-index:2;
-    position:absolute;
-    bottom:20%;
-    margin-left:10%;
+p {
+  color: white;
+  z-index: 2;
+  position: absolute;
+  bottom: 20%;
+  margin-left: 10%;
 }
-nav{
-    background-color:var(--rose);
-    width:100%;
-    height:50px;
-    z-index:2;
+nav {
+  background-color: var(--rose);
+  width: 100%;
+  height: 50px;
+  z-index: 2;
 }
-footer{
-    background-color:var(--mauve);
-    width:100%;
-    height: 25%;
-    z-index:2;
-    position:relative;
-    padding:20px;
-    margin-top:20px;
-    margin-bottom:20px;
-    margin-left: 0;
-    margin-right:0;
-    object-fit: contain;
+footer {
+  background-color: var(--mauve);
+  width: 100%;
+  height: 25%;
+  z-index: 2;
+  position: relative;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 0;
+  margin-right: 0;
+  object-fit: contain;
 }
-footer p{
-    color:white;
+footer p {
+  color: white;
 }
-@media (orientation: landscape){
-.hero,
-.swiper{
-        height: 56.25vw;
-    }
+@media (orientation: landscape) {
+  .hero,
+  .swiper {
+    height: 56.25vw;
+  }
 }
 
-picture{
-    position:absolute;
-    width:100%;
-    height:100%;
-    background-color:var(--bleuFonce);   
+picture {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bleuFonce);
 }
-.hero{
-    position:relative;
+.hero {
+  position: relative;
 }
-.album1{
-    width:100%;
-    margin-top:20px;
-    margin-bottom:20px;
-    padding:0px;
+.album1 {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0px;
 }
-.album1 img{
-    margin-top: 20px;
-    max-width:100%;
-    height: auto;
+.album1 img {
+  margin-top: 20px;
+  max-width: 100%;
+  height: auto;
+}
+.album1 a {
+  text-decoration: none;
+  background-color: var(--rose);
+  color: var(--bleu);
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 0.25rem;
+}
+.album1 .txt {
+  color: white;
+}
 
+.album1 a:hover {
+  color: var(--turquoise);
 }
-.album1 a{
-    text-decoration: none;
-    background-color: var(--rose);
-    padding-top: 6px;
-    padding-bottom: 6px;
-    padding-left: 12px;
-    padding-right: 12px;
-    border-radius:  0.25rem;
+
+.album2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0px;
 }
-.album1 a :hover{
-    color:white;
+.album2 img {
+  margin-top: 20px;
+  max-width: 100%;
+  height: auto;
 }
-.album1 .txt{
-    color:white;
+.album2 .txt {
+  color: white;
 }
-.album2{
-    margin-top:20px;
-    margin-bottom:20px;
-    padding:0px;
+.album2 a {
+  text-decoration: none;
+  background-color: var(--rose);
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 0.25rem;
 }
-.album2 img{
-    margin-top: 20px;
-    max-width:100%;
-    height: auto;
+.album3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0px;
 }
-.album2 .txt{
-    color:white;
+.album3 img {
+  margin-top: 20px;
+  max-width: 100%;
+  height: auto;
 }
-.album2 a{
-    text-decoration: none;
-    background-color: var(--rose);
-    padding-top: 6px;
-    padding-bottom: 6px;
-    padding-left: 12px;
-    padding-right: 12px;
-    border-radius:  0.25rem;
+.album3 a {
+  text-decoration: none;
+  background-color: var(--rose);
+  padding-top: 2px;
+  padding-bottom: 6px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 0.25rem;
 }
-.album3{
-    margin-top:20px;
-    margin-bottom:20px;
-    padding:0px;
+.album3 .txt {
+  color: white;
 }
-.album3 img{
-    margin-top: 20px;
-    max-width:100%;
-    height: auto;
+@media (orientation: horizontal) {
+  .album1 {
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-top: 0;
+  }
+  .album2 {
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-top: 0;
+  }
+  .album3 {
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-top: 0;
+  }
 }
-.album3 a{
-    text-decoration: none;
-    background-color: var(--rose);
-    padding-top: 2px;
-    padding-bottom: 6px;
-    padding-left: 12px;
-    padding-right: 12px;
-    border-radius:  0.25rem;
+footer a {
+  text-decoration: none;
+  color: white;
 }
-.album3 .txt{
-    color:white;
+.nom {
+  text-decoration: none;
+  background: none;
+  border: none;
 }
-@media(orientation:horizontal){
-    .album1 {
-        margin-right:40px;
-        margin-left:40px;
-        margin-top: 0;
-    }
-    .album2 {
-        margin-right:40px;
-        margin-left:40px;
-        margin-top: 0;
-    }
-    .album3 {
-        margin-right:40px;
-        margin-left:40px;
-        margin-top: 0;
-    }
+.nom:hover {
+  color: var(--turquoise);
 }
-footer a{
-    text-decoration: none;
-    color:white;
-}
-.nom{
-    text-decoration: none;
-    background: none;
-    border:none;
-}
-.nom:hover{
-    color:  var(--turquoise);
-}
-.center{
-    width:100%;
-    height:100%;
-}
-.imgflorence{
-    width:300px;
-    margin-left:17%;
-}
-.imgnatacha{
-    width:300px;
-    margin-left:17%; 
+.center {
+  width: 100%;
+  height: 100%;
 }

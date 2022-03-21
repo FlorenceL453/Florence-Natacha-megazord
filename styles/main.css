@@ -3,76 +3,97 @@
 
 /*Trouver comment résoudre ce problème ou trouver une autre typo*/
 @font-face {
-    font-family: 'DevilBreezeMedium';
-    src: url('../fonts/devil_breeze/DevilBreezeMedium.svg#DevilBreezeMedium') format('svg'),
-         url('../fonts/devil_breeze/DevilBreezeMedium.ttf') format('truetype'),
-         url('../fonts/devil_breeze/DevilBreezeMedium.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "DevilBreezeMedium";
+  src: url("../fonts/devil_breeze/DevilBreezeMedium.svg#DevilBreezeMedium")
+      format("svg"),
+    url("../fonts/devil_breeze/DevilBreezeMedium.ttf") format("truetype"),
+    url("../fonts/devil_breeze/DevilBreezeMedium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 :root {
-    --turquoise: #07D5CB;
-    --bleu: #2FA0D0;
-    --mauve: #751F84;
-    --rose: #B50FB8;
-    --bleuFonce:#191256;
-    --fontTitre: 'DevilBreezeMedium';
-    --fontTexte: 'Noto Sans Display', sans-serif;
+  --turquoise: #07d5cb;
+  --bleu: #2fa0d0;
+  --mauve: #751f84;
+  --rose: #b50fb8;
+  --bleuFonce: #191256;
+  --fontTitre: "DevilBreezeMedium";
+  --fontTexte: "Noto Sans Display", sans-serif;
 }
 
 /*Les 2 typos fonctionne. Je crois s'était un problème de compatibilité avec google chrome et ttf*/
 /*Les liens url dans le font-face sont bons. Ils trouvent la font et ne donne pas d'erreur dans la console.*/
 /*Ceci est un test*/
 
-/*Préparation des balises commun entre les pages*/
-body p, a{
-    font-family: var(--fontTexte);
-    font-size: 18px;
-    color: var(--turquoise);
-    text-shadow: 2px 2px var(--bleuFonce);
-}
-.title-1 {
-    font-family: var(--fontTitre);
-    color: var(--mauve);
-    font-size: 50px;
+body {
+  background-color: var(--mauve);
 }
 
-.title-1-logo {
-    font-family: var(--fontTitre);
-    font-size: 25px;
-    color: var(--bleuFonce);
-    text-shadow: 3px 3px var(--mauve);
+/*Préparation des balises commun entre les pages*/
+body p,
+a {
+  font-family: var(--fontTexte);
+  font-size: 18px;
+  color: var(--turquoise);
+}
+.title-1 {
+  font-family: var(--fontTitre);
+  color: white;
+  font-size: 50px;
+}
+
+.logo {
+  font-family: var(--fontTitre);
+  font-size: 30px;
+  color: var(--bleuFonce);
 }
 
 .title-2 {
-    font-family: var(--fontTitre);
-    color: var(--turquoise);
-    font-size: 40px;
+  font-family: var(--fontTitre);
+  color: var(--turquoise);
+  font-size: 40px;
 }
 
 /*Sous-titre dans la section principale de la page*/
 .title-3 {
-    font-family: var(--fontTitre);
-    color: var(--mauve);
-    text-shadow: 2px 2px var(--rose);
-    font-size: 30px;
+  font-family: var(--fontTitre);
+  color: var(--rose);
+  font-size: 30px;
 }
 /*Variante du sous-titre dans la section principale de la page*/
 .title-4 {
-    font-family: var(--fontTitre);
+  font-family: var(--fontTitre);
+  color: var(--bleu);
+  font-size: 25px;
+}
+
+.btn {
     color: var(--bleu);
-    font-size: 25px;
+    background-color: var(--rose);
+}
+.btn:hover {
+    color: var(--turquoise);
+    background-color: var(--rose);
 }
 
 .footer {
-    background-color: var(--rose);
+  background-color: var(--rose);
+  color: white;
+  text-decoration: none;
 }
 
 /*S'assurer que les noms dans le footer aillent le même style qu'avant*/
 .text-footer {
-    font-family: var(--fontTexte);
-    font-size: 18px;
-    color: var(--turquoise);
-    text-shadow: 2px 2px var(--bleuFonce);
+  font-family: var(--fontTexte);
+  font-size: 18px;
+  color: var(--turquoise);
+  text-shadow: 2px 2px var(--bleuFonce);
 }
+
+/*Centrer horizontalement l'image du modal de chaque étudiant et centrer celle-ci à l'aide de margin*/
+.imgModal {
+    margin: 0px 75px;
+    width: 300px;
+    height: 100%;
+  }
