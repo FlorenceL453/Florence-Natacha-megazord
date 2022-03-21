@@ -47,8 +47,7 @@ body {
 }
 
 /*Couleur du texte de présentation et du texte du footer*/
-.text-header,
-.text-footer {
+.text-header {
   color: var(--turquoise);
   text-shadow: 2px 2px var(--bleuFonce);
 }
@@ -108,25 +107,6 @@ body {
   }
 }
 
-/*La navbar défile jusqu'à ce qu'elle atteint le sommet de la page*/
-nav {
-  background-color: var(--rose);
-  width: 100%;
-  height: 5%;
-  margin-bottom: 20px;
-}
-
-/*Enlever les marges de côtés pour que le hamburger soit collé à gauche du navbar*/
-.navbar-toggler {
-  margin: 0px;
-  background-color: var(--mauve);
-}
-
-/*Ajuster la taille de la barre latérale*/
-.barreLateral {
-  width: 100%;
-}
-
 /*Prendre toute la largeur et la hauteur du parent*/
 /*.cartesMembres {
     height: 100%;
@@ -154,13 +134,23 @@ nav {
   height: 100%;
 }
 
+/*Aggrandir la taille du nom et du rôle des membres*/
 .nomMembre {
   font-family: var(--fontTitre);
   color: var(--rose);
+  font-size: 35px;
+  margin: 0px;
+}
+
+.roleMembre {
+    font-size: 25px;
+    color: var(--bleu);
+    margin: 0px;
 }
 
 .description {
   color: var(--turquoise);
+  margin: 0px;
 }
 /*Fond du footer de la carte*/
 .card-footer {
@@ -262,34 +252,3 @@ nav {
   }
 }
 
-/*Pied de page: source du problème d'alignement était un position: absolute et top:0px sur le container et le row.*/
-.footer {
-  width: 100%;
-  background-color: var(--rose);
-  padding: 20px;
-  margin-top: 20px;
-}
-
-/*Par défaut, aligner le text et le lien dans le pied de page*/
-.text-footer,
-.lien-github {
-  margin: 0%;
-  padding: 0%;
-}
-
-/*Séparer le lien github des text-footer*/
-.lien-github {
-  margin: 15% 0%;
-  text-decoration: none;
-}
-
-/*Changer la couleur du X dans la fenêtre du modal*/
-/*.btn-close {
-    color: var(--rose);
-    background-color: var(--mauve);
-}*/
-
-/*État de survole pour les noms dans le footer*/
-.nom:hover {
-  color: var(--bleu);
-}

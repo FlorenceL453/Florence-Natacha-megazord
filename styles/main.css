@@ -37,6 +37,26 @@ a {
   font-size: 18px;
   color: var(--turquoise);
 }
+
+/*La navbar défile jusqu'à ce qu'elle atteint le sommet de la page*/
+nav {
+    background-color: var(--rose);
+    width: 100%;
+    height: 5%;
+    margin-bottom: 20px;
+}
+  
+/*Enlever les marges de côtés pour que le hamburger soit collé à gauche du navbar*/
+.navbar-toggler {
+    margin: 0px;
+    background-color: var(--mauve);
+}
+  
+/*Ajuster la taille de la barre latérale*/
+.barreLateral {
+    width: 100%;
+}
+
 .title-1 {
   font-family: var(--fontTitre);
   color: white;
@@ -47,6 +67,7 @@ a {
   font-family: var(--fontTitre);
   font-size: 30px;
   color: var(--bleuFonce);
+  margin-bottom: 0%;
 }
 
 .title-2 {
@@ -68,27 +89,51 @@ a {
   font-size: 25px;
 }
 
-.btn {
+.btn-savoir-plus {
     color: var(--bleu);
     background-color: var(--rose);
 }
-.btn:hover {
+.btn-savoir-plus:hover {
     color: var(--turquoise);
     background-color: var(--rose);
 }
 
+/*Arrière-plan du footer*/
 .footer {
-  background-color: var(--rose);
-  color: white;
-  text-decoration: none;
+    width: 100%;
+    background-color: var(--rose);
+    padding: 20px;
+    margin-top: 20px;
+    color: white;
 }
 
-/*S'assurer que les noms dans le footer aillent le même style qu'avant*/
+/*Couleur du text du footer les noms et l'année*/
 .text-footer {
+    margin: 0%;
+    padding: 0%;
   font-family: var(--fontTexte);
   font-size: 18px;
-  color: var(--turquoise);
-  text-shadow: 2px 2px var(--bleuFonce);
+  text-decoration: none;
+  color: white;
+}
+
+.text-footer:hover {
+    color: var(--turquoise);
+}
+
+/*Couleur du lien de github*/
+.lien-github {
+    text-decoration: none;
+    margin: 15% 0%;
+    color: white;
+}
+.lien-github:hover {
+    color: white;
+}
+
+.modal-header, .modal-body {
+    background-color: var(--turquoise);
+    border-bottom: 1px solid var(--bleuFonce);
 }
 
 /*Centrer horizontalement l'image du modal de chaque étudiant et centrer celle-ci à l'aide de margin*/
