@@ -108,16 +108,12 @@ body {
 }
 
 /*Prendre toute la largeur et la hauteur du parent*/
-/*.cartesMembres {
-    height: 100%;
-    width: 100%;
-}*/
-
 /*Ajout marge verticale*/
 .carteMembre {
   margin: 10px 0px;
   padding: 0px;
   width: 100%;
+  height: 100%;
   background-color: var(--mauve);
 }
 
@@ -143,9 +139,9 @@ body {
 }
 
 .roleMembre {
-    font-size: 25px;
-    color: var(--bleu);
-    margin: 0px;
+  font-size: 25px;
+  color: var(--bleu);
+  margin: 0px;
 }
 
 .description {
@@ -210,10 +206,10 @@ body {
 }
 
 /*Changer la couleur de la bordure arrondi*/
-.img-thumbnail {
-  background-color: var(--rose);
+/*.img-thumbnail {
+  background-color: var(--bleuFonce);
   border-color: var(--bleuFonce);
-}
+}*/
 
 /*Changer l'apparence des points réguliers et celui qui est active*/
 .swiper-pagination-bullet {
@@ -251,4 +247,3 @@ body {
     clear: both;
   }
 }
-
