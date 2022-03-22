@@ -31,11 +31,10 @@ body {
 }
 
 /*Préparation des balises commun entre les pages*/
-body p,
-a {
+body p {
   font-family: var(--fontTexte);
   font-size: 18px;
-  color: var(--turquoise);
+  color: white;
 }
 
 /*La navbar défile jusqu'à ce qu'elle atteint le sommet de la page*/
