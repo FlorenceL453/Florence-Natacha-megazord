@@ -99,7 +99,7 @@ nav {
 }
 
 /*Arrière-plan du footer*/
-.footer {
+footer, .footer {
     width: 100%;
     background-color: var(--rose);
     padding: 20px;
