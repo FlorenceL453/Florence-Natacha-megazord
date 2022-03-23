@@ -132,11 +132,6 @@
     text-align: center;*/
 }
 
-/*Séparer la section du carrousel de celle des cartes*/
-.Carrousel {
-  margin-top: 20px;
-}
-
 /*Aspect ratio et hauteur de chaque slide*/
 .swiper-slide {
   aspect-ratio: 16 / 9;
@@ -182,9 +177,4 @@
 /*Changer les ronds en lozanges si possible*/
 .swiper-pagination-bullet-active {
   background-color: var(--turquoise);
-}
-
-/*Séparer la section de la vidéo de celle des membres du groupe*/
-.video {
-  margin-top: 20px;
 }

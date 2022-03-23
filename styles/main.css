@@ -101,6 +101,7 @@ nav {
   font-family: var(--fontTitre);
   color: var(--turquoise);
   font-size: 40px;
+  margin-top: 20px; /*Pour séparer chaque section du contenu principal*/
 }
 
 /*Sous-titre dans la section principale de la page*/
