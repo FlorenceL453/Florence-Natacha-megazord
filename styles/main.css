@@ -81,6 +81,10 @@ nav {
 
 /*Ajuster la taille de la barre latérale*/
 .barreLateral {
+  height: 100%;
+}
+/*width de la boite de l'animation*/
+.anim3D {
   width: 100%;
 }
 
