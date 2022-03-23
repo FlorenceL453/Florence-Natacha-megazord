@@ -51,10 +51,27 @@ body p {
   color: white;
 }
 
+/*Balise du héro prend toute la dimension de l'écran peut importe sa taille*/
+/*L'image dépassez à cause du 100vw*/
+.hero {
+  position: relative;
+  margin: 0px;
+  width: 100%;
+  height: 100vh;
+}
+
 /*Couleur du texte de présentation et du texte du footer*/
 .text-header {
   color: var(--turquoise);
   text-shadow: 2px 2px var(--bleuFonce);
+}
+
+/*Cacher l'image en portrait et afficher celle du landscape*/
+/*Faire en sorte que la hauteur de la section change à 56.25% de la largeur de l'écran*/
+@media (orientation: landscape) {
+  .hero {
+    height: 56.25vw;
+  }
 }
 
 .contraste {

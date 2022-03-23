@@ -3,13 +3,7 @@
   font-family: var(--fontTexte);
   margin: 0px;
 }
-/*
-html {
-  width: 100%;
-  height: 100%;
-}*/
 
-.hero,
 .swiper {
   width: 100vw;
   height: 100vh;
@@ -81,14 +75,10 @@ html {
     height:100%;
 }*/
 .hero a {
-  border: none;
-  background-color: var(--rose);
-  color: white;
   z-index: 2;
   position: absolute;
   bottom: 15%;
   margin-left: 10%;
-  text-decoration: none;
   margin: 0px;
   scroll-behavior: smooth;
 }

@@ -1,22 +1,5 @@
 /*Styles de la page d'accueil*/
 
-/*Balise du héro prend toute la dimension de l'écran peut importe sa taille*/
-/*L'image dépassez à cause du 100vw*/
-.hero {
-  position: relative;
-  margin: 0px;
-  width: 100%;
-  height: 100vh;
-} /*Voir avec florence*/
-
-/*Aligner la colonne du texte au milieu de la page avec bootsrap*/
-/*.sectionImageGroupe {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}*/
-
 /*Prendre toute la taille de la section du héros*/
 .sectionImageGroupe {
   position: absolute;
@@ -38,11 +21,6 @@
   margin: 5% 15%;
   padding: 0% 25%;
 }
-/*Mise en page du hover*/
-/*.btn-primary:hover {
-  color: var(--turquoise);
-  background-color: var(--rose);
-}*/
 
 /*Voir ce que je peux faire pour donner une taille à la section sans rogner l'image de portrait*/
 /*Les images dans la balise picture prend toute la taille de la section?*/
@@ -69,14 +47,6 @@
   object-fit: cover;
   object-position: 0% 100%;
 }
-
-/*Cacher l'image en portrait et afficher celle du landscape*/
-/*Faire en sorte que la hauteur de la section change à 56.25% de la largeur de l'écran*/
-@media (orientation: landscape) {
-  .hero {
-    height: 56.25vw;
-  }
-} /*Voir avec florence*/
 
 /*Prendre toute la largeur et la hauteur du parent*/
 /*Ajout marge verticale*/
