@@ -190,7 +190,13 @@ footer,
   color: white;
 }
 
-.text-footer:hover {
+.nom {
+  font-size: 18px;
+  text-decoration: none;
+  background: none;
+  border: none;
+}
+.nom:hover {
   color: var(--turquoise);
 }
 
