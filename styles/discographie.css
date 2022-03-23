@@ -184,12 +184,12 @@ picture {
   padding-right: 12px;
   border-radius: 0.25rem;
 }
+.album1 a:hover{
+  color: var(--turquoise);
+  background-color: var(--rose);
+}
 .album1 .txt {
   color: white;
-}
-
-.album1 a:hover {
-  color: var(--turquoise);
 }
 
 .album2 {
