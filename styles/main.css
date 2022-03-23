@@ -204,10 +204,12 @@ footer,
   color: white;
 }
 
-.modal-header,
+.modal-header {
+  border-bottom: none;
+}
+
 .modal-body {
-  background-color: var(--turquoise);
-  border-bottom: 1px solid var(--bleuFonce);
+  background-image: linear-gradient(rgba(0, 0, 0, 0), var(--mauve));
 }
 
 /*Centrer horizontalement l'image du modal de chaque étudiant et centrer celle-ci à l'aide de margin*/
