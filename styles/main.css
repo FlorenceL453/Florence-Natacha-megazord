@@ -26,6 +26,20 @@
 /*Les liens url dans le font-face sont bons. Ils trouvent la font et ne donne pas d'erreur dans la console.*/
 /*Ceci est un test*/
 
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+html,
+body {
+  margin: 0px;
+  width: 100%;
+}
+
 body {
   background-color: var(--mauve);
 }
@@ -37,23 +51,37 @@ body p {
   color: white;
 }
 
+/*Couleur du texte de présentation et du texte du footer*/
+.text-header {
+  color: var(--turquoise);
+  text-shadow: 2px 2px var(--bleuFonce);
+}
+
+.contraste {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
 /*La navbar défile jusqu'à ce qu'elle atteint le sommet de la page*/
 nav {
-    background-color: var(--rose);
-    width: 100%;
-    height: 5%;
-    margin-bottom: 20px;
+  background-color: var(--rose);
+  width: 100%;
+  height: 5%;
+  margin-bottom: 20px;
 }
-  
+
 /*Enlever les marges de côtés pour que le hamburger soit collé à gauche du navbar*/
 .navbar-toggler {
-    margin: 0px;
-    background-color: var(--mauve);
+  margin: 0px;
+  background-color: var(--mauve);
 }
-  
+
 /*Ajuster la taille de la barre latérale*/
 .barreLateral {
-    width: 100%;
+  width: 100%;
 }
 
 .title-1 {
@@ -88,56 +116,81 @@ nav {
   font-size: 25px;
 }
 
+/*Ajouter cette classe sur tous les boutons pour le style: couleur et padding*/
 .btn-savoir-plus {
-    color: var(--bleu);
-    background-color: var(--rose);
+  color: var(--bleu);
+  background-color: var(--rose);
+  border: none;
+  text-decoration: none;
 }
 .btn-savoir-plus:hover {
-    color: var(--turquoise);
-    background-color: var(--rose);
+  color: var(--turquoise);
+  background-color: var(--rose);
+}
+
+/*Mettre la taille du div qui contient le iframe*/
+.divIframe {
+  aspect-ratio: 16 / 9;
+}
+
+/*Backup si le aspect-ratio ne marche pas (anciens version des navigateurs)*/
+@supports not (aspect-ratio: 16 / 9) {
+  .divIframe::before {
+    float: left;
+    padding-top: 56.25%;
+    content: "";
+  }
+  .divIframe::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
 }
 
 /*Arrière-plan du footer*/
-footer, .footer {
-    width: 100%;
-    background-color: var(--rose);
-    padding: 20px;
-    margin-top: 20px;
-    color: white;
+footer,
+.footer {
+  width: 100%;
+  background-color: var(--rose);
+  padding: 20px;
+  margin-top: 20px;
+  color: white;
 }
 
 /*Couleur du text du footer les noms et l'année*/
 .text-footer {
-    margin: 0%;
-    padding: 0%;
+  margin: 0%;
+  padding: 0%;
   font-family: var(--fontTexte);
   font-size: 18px;
   text-decoration: none;
+  border: none;
   color: white;
 }
 
 .text-footer:hover {
-    color: var(--turquoise);
+  color: var(--turquoise);
 }
 
 /*Couleur du lien de github*/
 .lien-github {
-    text-decoration: none;
-    margin: 15% 0%;
-    color: white;
+  text-decoration: none;
+  margin: 15% 0%;
+  color: white;
 }
 .lien-github:hover {
-    color: white;
+  color: white;
 }
 
-.modal-header, .modal-body {
-    background-color: var(--turquoise);
-    border-bottom: 1px solid var(--bleuFonce);
+.modal-header,
+.modal-body {
+  background-color: var(--turquoise);
+  border-bottom: 1px solid var(--bleuFonce);
 }
 
 /*Centrer horizontalement l'image du modal de chaque étudiant et centrer celle-ci à l'aide de margin*/
 .imgModal {
-    margin: 0px 75px;
-    width: 300px;
-    height: 100%;
-  }
+  margin: 0px 75px;
+  width: 300px;
+  height: 100%;
+}
