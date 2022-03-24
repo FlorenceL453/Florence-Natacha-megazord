@@ -83,12 +83,14 @@ h1 {
   bottom: 25%;
   margin-left: 10%;
 }
-p {
-  color: white;
+.un p{
+  color: var(--turquoise);
   z-index: 2;
   position: absolute;
   bottom: 20%;
+  left:0;
   margin-left: 10%;
+  
 }
 footer {
   z-index: 2;
