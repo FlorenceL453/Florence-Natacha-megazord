@@ -5,7 +5,7 @@ const sectionsArr = document.querySelectorAll('.contenuP section');
     gsap.timeline({
         duration:2,
         scrollTrigger: {
-            markers: true,
+            markers: false,
             start: 'top 75%',
             end: 'bottom 75%',
             toggleActions: 'restart complete reverse reset',
