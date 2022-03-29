@@ -1,4 +1,4 @@
-/*gsap.registerPlugin(ScrollTrigger);*/
+gsap.registerPlugin(ScrollTrigger);
 
 const animSection = gsap.to('section', {
     scrollTrigger: 'section',
