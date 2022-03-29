@@ -69,10 +69,8 @@
     <main class="container contenuPrincipal" id="main">
         <div class="row">
             <div class="col-lg-9 contenuP">
-                <section class="row align-items-center justify-content-center titreCarteMembre">
+                <section class="row justify-content-start align-items-start titreCarteMembre">
                     <h2 class="title-2">Membres du groupe</h2>
-                </section>
-                <section class="row justify-content-start align-items-start">
                     <div class="col-12 col-sm-6">
                         <div class="card carteMembre">
                             <img src="img/dan.jpg" class="card-img-top">
@@ -145,44 +143,44 @@
                         </div>
                     </div>
                 </section>
+                <section class="col-12 col-lg-12 Carrousel">
+                    <h2 class="title-2">Images Promotionnelles</h2>
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/img_promo1.jpg" class="img-fluid imgPromo"
+                                    alt="Image Promotionnelle Evolve" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/img_promo2.jpg" class="img-fluid imgPromo"
+                                    alt="Image Promotionnelle Smoke & Mirrors" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/img_promo3.jpg" class="img-fluid imgPromo"
+                                    alt="Image Promotionnelle Smoke & Mirrors" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/img_promo4.jpg" class="img-fluid imgPromo"
+                                    alt="Image Promotionnelle Machine" />
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </section>
+                <section class="col-12 col-lg-12 video">
+                    <h2 class="title-2">Video</h2>
+                    <div class="divIframe">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/j60ClcNYWu4"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </section>
             </div>
             <div class="col-lg-3 barreLateral">
                 <img class="d-none d-lg-block anim3D" src="img/3d.png" />
             </div>
-            <section class="col-12 col-lg-9 Carrousel">
-                <h2 class="title-2">Images Promotionnelles</h2>
-                <div class="swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="img/img_promo1.jpg" class="img-fluid imgPromo"
-                                alt="Image Promotionnelle Evolve" />
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="img/img_promo2.jpg" class="img-fluid imgPromo"
-                                alt="Image Promotionnelle Smoke & Mirrors" />
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="img/img_promo3.jpg" class="img-fluid imgPromo"
-                                alt="Image Promotionnelle Smoke & Mirrors" />
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="img/img_promo4.jpg" class="img-fluid imgPromo"
-                                alt="Image Promotionnelle Machine" />
-                        </div>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
-            </section>
-            <section class="col-12 col-lg-9 video">
-                <h2 class="title-2">Video</h2>
-                <div class="divIframe">
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/j60ClcNYWu4"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen>
-                    </iframe>
-                </div>
-            </section>
         </div>
     </main>
     <footer class="footer">
@@ -235,6 +233,8 @@
         crossorigin="anonymous"></script>
     <!--GSAP 3-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <!--ScrollTrigger-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
     <!--Swiper js-->
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <!--Main et Home scripts-->
