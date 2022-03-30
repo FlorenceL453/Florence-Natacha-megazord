@@ -6,8 +6,14 @@ sectionArr.forEach(function(section){
         duration:2,
         scrollTrigger: {
              markers:true,
-            start: 'bottom bottom',
-            end:'top top',
+            start: 'top 100%',
+            end:'bottom 100%',
+            toggleActions: 'restart complete reverse reset',
+            trigger: section,
     },
 })
-})
+.fromTo('.title-2',{opacity:0, scale:0.5,},{opacity:1, scale:1,})
+.fromTo(' section img',{x:'-300%'},{x:'0%'})
+.fromTo('.title-1 ',{opacity:0, scale:0.5,},{opacity:1, scale:1,})
+.fromTo(' section img',{x:'-300%'},{x:'0%'})
+});
