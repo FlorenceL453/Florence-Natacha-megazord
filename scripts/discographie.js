@@ -1,8 +1,13 @@
 gsap.registerPlugin(ScrollTrigger);
 
-const animSection = gsap.to('section', {
-    scrollTrigger: 'section',
-    markers:true,
-    start: 'bottom bottom',
-    end:'top top',
-});
+const sectionArr = document.querySelectorAll('section');
+sectionArr.forEach(function(section){
+    gsap.timeline({
+        duration:2,
+        scrollTrigger: {
+             markers:true,
+            start: 'bottom bottom',
+            end:'top top',
+    },
+})
+})
