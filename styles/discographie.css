@@ -109,6 +109,10 @@ picture {
   height: 100%;
   background-color: var(--bleuFonce);
 }
+.spriteSheet{
+  width:100%;
+  
+}
 .album1 {
   width: 100%;
   margin-top: 20px;
