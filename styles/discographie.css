@@ -110,8 +110,8 @@ picture {
   background-color: var(--bleuFonce);
 }
 .spriteSheetFlo{
-  width:200px;
-  height:200px;
+  width:400px;
+  height:400px;
   background-image:url(img\def_bas.png);
   animation-name: defilementBas;
   animation-duration:1s;
@@ -120,7 +120,7 @@ picture {
 }
 @keyframes defilementBas{
   from{ background-position: 0 0;}
-  to { background-position:0 -25000px;}
+  to { background-position:0 -96000px;}
 }
 .album1 {
   width: 100%;
