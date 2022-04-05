@@ -109,9 +109,18 @@ picture {
   height: 100%;
   background-color: var(--bleuFonce);
 }
-.spriteSheet{
-  width:100%;
-  
+.spriteSheetFlo{
+  width:200px;
+  height:200px;
+  background-image:url(img\def_bas.png);
+  animation-name: defilementBas;
+  animation-duration:1s;
+  animation-iteration-count:infinite;
+  animation-timing-function: steps(24);
+}
+@keyframes defilementBas{
+  from{ background-position: 0 0;}
+  to { background-position:0 -25000px;}
 }
 .album1 {
   width: 100%;
