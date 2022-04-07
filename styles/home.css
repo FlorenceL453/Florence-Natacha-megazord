@@ -125,7 +125,7 @@
 /*Ajuster le width des images pour éviter les espaces entre les slides*/
 /*Essayer de trouver d'autres images horizontales pour activer le height: 100%. Si non, le laisser comme ça!*/
 .imgPromo {
-  object-fit: contain;
+  object-fit: cover;
   width: 100%;
   height: 100%;
 }
