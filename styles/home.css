@@ -103,18 +103,18 @@
 }
 
 /*Aspect ratio et hauteur de chaque slide*/
-.swiper-slide {
+.swiper-wrapper {
   aspect-ratio: 16 / 9;
 }
 
 /*Backup si le aspect-ratio ne marche pas (anciens version des navigateurs)*/
 @supports not (aspect-ratio: 16 / 9) {
-  .swiper-slide::before {
+  .swiper-wrapper::before {
     float: left;
     padding-top: 56.25%;
     content: "";
   }
-  .swiper-slide::after {
+  .swiper-wrapper::after {
     display: block;
     content: "";
     clear: both;
@@ -125,9 +125,9 @@
 /*Ajuster le width des images pour éviter les espaces entre les slides*/
 /*Essayer de trouver d'autres images horizontales pour activer le height: 100%. Si non, le laisser comme ça!*/
 .imgPromo {
-  object-fit: cover;
+  object-fit: contain;
   width: 100%;
-  /*height: 100%;*/
+  height: 100%;
 }
 
 /*Changer la couleur de la bordure arrondi*/
