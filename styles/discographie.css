@@ -110,9 +110,12 @@ picture {
   background-color: var(--bleuFonce);
 }
 .spriteSheetFlo{
-  width:400px;
-  height:400px;
-  background-image:url(img\def_bas.png);
+  width:200px;
+  height:200px;
+  position: relative;
+  object-fit: contain;
+  background-position:center;
+  background-image:url('C:/Users/lili4/Documents/GitHub/Florence-Natacha-megazord/img/defBasFlo.png');
   animation-name: defilementBas;
   animation-duration:1s;
   animation-iteration-count:infinite;
