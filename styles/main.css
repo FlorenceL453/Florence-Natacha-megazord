@@ -216,11 +216,14 @@ footer,
 
 .modal-body {
   background-image: linear-gradient(rgba(0, 0, 0, 0), var(--mauve));
+  margin: 0px auto;
 }
 
 /*Centrer horizontalement l'image du modal de chaque étudiant et centrer celle-ci à l'aide de margin*/
 .imgModal {
-  margin: 0px 75px;
+  /*display: inline-block;
+  margin: 0px auto;*/
   width: 300px;
   height: 100%;
+  padding: 25px;
 }
