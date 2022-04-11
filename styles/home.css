@@ -148,3 +148,12 @@
 .swiper-pagination-bullet-active {
   background-color: var(--turquoise);
 }
+
+/*Mettre la première sprite sheet defilement bas*/
+.anim3D {
+  width: 420px;
+  height: 420px;
+  background-image: url("file:///C:/Users/1763142/Documents/GitHub/Florence-Natacha-megazord/img/nat_avancer_def_bas.png");
+  background-size: 100% auto;
+  background-position: 0% 0%;
+}
