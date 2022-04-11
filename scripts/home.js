@@ -5,7 +5,7 @@ const sectionsArr = document.querySelectorAll('.contenuP section');
     gsap.timeline({
         duration:2,
         scrollTrigger: {
-            markers: true,
+            markers: false,
             start: 'top 75%',
             end: 'bottom 15%',
             toggleActions: 'restart complete reverse reset',
@@ -33,6 +33,27 @@ const sectionsArr = document.querySelectorAll('.contenuP section');
 
  //Écouter le scroll de la page
  window.addEventListener('scroll', function() {
-     window.clearTimeout(isScrolling);
-     body.classList.add("is-scrolling");
- })
+    window.clearTimeout(isScrolling);
+    body.classList.add("is-scrolling");
+    
+    isScrolling = setTimeout(function() {
+      body.classList.remove("is-scrolling");
+    }, 250);
+ });
+
+ //Animer la barrelatérale et ajouter et supprimer les classes scroll-up et down selon la direction du scroll.
+gsap.to('.barreLateral', {
+    scrollTrigger: {
+        trigger:'.barreLateral',
+        scrub:true,
+        onUpdate: (image) => {
+            if(image.direction== -1) {
+                body.classList.add("scroll-up");
+                body.classList.remove("scroll-down");
+            } else {
+                body.classList.add("scroll-down");
+                body.classList.remove("scroll-up");
+            }
+        }
+    }
+})

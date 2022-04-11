@@ -153,7 +153,24 @@
 .anim3D {
   width: 420px;
   height: 420px;
-  background-image: url("file:///C:/Users/1763142/Documents/GitHub/Florence-Natacha-megazord/img/nat_avancer_def_bas.png");
+  background-image: url("../img/nat_idle.png");
   background-size: 100% auto;
   background-position: 0% 0%;
 }
+
+/*Faire les animations des sprites sheet*/
+@keyframes idle {
+  0% {background-position: 0 0;}
+  100% {background-position: 0 10500;}
+}
+
+@keyframes scrollUp {
+  0% {background-position: 0 0;}
+  100% {background-position: 0 10500;}
+}
+
+@keyframes scrollDown {
+  0% {background-position: 0 0;}
+  100% {background-position: 0 10500;}
+}
+
