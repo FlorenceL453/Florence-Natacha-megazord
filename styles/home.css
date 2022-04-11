@@ -158,6 +158,24 @@
   background-position: 0% 0%;
 }
 
+.scroll-up .anim3D, .scroll-down .anim3D {
+  animation: idle 1s steps(25) infinite;
+}
+
+.scroll-up.is-scrolling .anim3D {
+  background-image: url("../img/nat_reculer_def_haut.png");
+  background-size: 100% auto;
+  background-position: 0% 0%;
+  animation: scrollUp 1s steps(25) infinite;
+}
+
+.scroll-down.is-scrolling .anim3D {
+  background-image: url("../img/nat_avancer_def_bas.png");
+  background-size: 100% auto;
+  background-position: 0% 0%;
+  animation: scrollDown 1s steps(25) infinite;
+}
+
 /*Faire les animations des sprites sheet*/
 @keyframes idle {
   0% {background-position: 0 0;}

@@ -38,7 +38,7 @@ const sectionsArr = document.querySelectorAll('.contenuP section');
     
     isScrolling = setTimeout(function() {
       body.classList.remove("is-scrolling");
-    }, 250);
+    }, 500);
  });
 
  //Animer la barrelatérale et ajouter et supprimer les classes scroll-up et down selon la direction du scroll.
@@ -46,6 +46,7 @@ gsap.to('.barreLateral', {
     scrollTrigger: {
         trigger:'.barreLateral',
         scrub:true,
+        y:'100%',
         onUpdate: (image) => {
             if(image.direction== -1) {
                 body.classList.add("scroll-up");
