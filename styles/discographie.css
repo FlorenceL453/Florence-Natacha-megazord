@@ -117,16 +117,16 @@ picture {
   background-position: 0% 0%;
   object-fit: contain;
 }
-.idle{
+.idle .spriteSheetFlo{
   animation: idle 1s steps(24) infinite;
 }
-.scroll-up.is-scrolling .anim3D {
+.scroll-up.is-scrolling .spriteSheetFlo {
   background-image: url("../img/defHautFlo.png");
   background-size: 100% auto;
   background-position: 0% 0%;
   animation: scrollUp 1s steps(24) infinite;
 }
-.scroll-down.is-scrolling .anim3D {
+.scroll-down.is-scrolling .spriteSheetFlo {
   background-image: url("../img/defBasFlo.png");
   background-size: 100% auto;
   background-position: 0% 0%;

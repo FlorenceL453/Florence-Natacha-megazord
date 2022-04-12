@@ -38,18 +38,18 @@ window.addEventListener('scroll', function() {
         scrub:2,
         toggleActions: 'restart complete reverse reset',
         onUpdate: (image) => {
-            if(image.direction== -1) {
+            if(image.direction== 1) {
                 body.classList.add("scroll-up");
                 body.classList.remove("scroll-down");
                 body.classList.remove("idle");
-            } else if(image.direction== 1) {
-                body.classList.add("idle");
-                body.classList.remove("scroll-up");
-                body.classList.remove("scroll-down");
-            }else {
-                body.classList.add("scroll-down");
-                body.classList.remove("scroll-up");
+            } if(image.direction== -1) {
                 body.classList.remove("idle");
+                body.classList.remove("scroll-up");
+                body.classList.add("scroll-down");
+            }else {
+                body.classList.remove("scroll-down");
+                body.classList.remove("scroll-up");
+                body.classList.add("idle");
             }
         }
     },
