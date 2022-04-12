@@ -38,7 +38,7 @@ const sectionsArr = document.querySelectorAll('.contenuP section');
     
     isScrolling = setTimeout(function() {
       body.classList.remove("is-scrolling");
-    }, 500);
+    }, 1000);
  });
 
  //Animer la barrelatérale et ajouter et supprimer les classes scroll-up et down selon la direction du scroll.
