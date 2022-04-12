@@ -179,16 +179,16 @@
 /*Faire les animations des sprites sheet*/
 @keyframes idle {
   0% {background-position: 0 0;}
-  100% {background-position: 0 10500;}
+  100% {background-position: 0 100%;}
 }
 
 @keyframes scrollUp {
   0% {background-position: 0 0;}
-  100% {background-position: 0 10500;}
+  100% {background-position: 0 100%;}
 }
 
 @keyframes scrollDown {
   0% {background-position: 0 0;}
-  100% {background-position: 0 10500;}
+  100% {background-position: 0 100%;}
 }
 
