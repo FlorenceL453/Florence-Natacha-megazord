@@ -42,11 +42,11 @@ const sectionsArr = document.querySelectorAll('.contenuP section');
  });
 
  //Animer la barrelatérale et ajouter et supprimer les classes scroll-up et down selon la direction du scroll.
-gsap.to('.barreLateral', {
+gsap.from('.anim3D', {
     scrollTrigger: {
-        trigger:'.barreLateral',
-        scrub:true,
-        y:'100%',
+        trigger:'.anim3D',
+        scrub:2,
+        toggleActions: 'restart complete reverse reset',
         onUpdate: (image) => {
             if(image.direction== -1) {
                 body.classList.add("scroll-up");
@@ -56,5 +56,7 @@ gsap.to('.barreLateral', {
                 body.classList.remove("scroll-up");
             }
         }
-    }
-})
+    },
+    //y:'0vw', L'animation fonctionne, mais en inverse, le scroll-up quand je défile vers le bas et le scroll-down quand je défile vers le haut.
+    y:'100vw',
+});
