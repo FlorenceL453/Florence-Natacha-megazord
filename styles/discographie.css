@@ -117,12 +117,8 @@ picture {
   background-position: 0% 0%;
   object-fit: contain;
 }
-.scroll-up .spriteSheetFlo .scroll-down .spriteSheetFlo {
+.idle{
   animation: idle 1s steps(24) infinite;
-}
-@keyframes idle {
-  0% {background-position: 0% 0%;}
-  100% {background-position: 0% 100%;}
 }
 .scroll-up.is-scrolling .anim3D {
   background-image: url("../img/defHautFlo.png");
@@ -130,12 +126,23 @@ picture {
   background-position: 0% 0%;
   animation: scrollUp 1s steps(24) infinite;
 }
-
 .scroll-down.is-scrolling .anim3D {
   background-image: url("../img/defBasFlo.png");
   background-size: 100% auto;
   background-position: 0% 0%;
   animation: scrollDown 1s steps(24) infinite;
+}
+@keyframes idle {
+  0% {background-position: 0% 0%;}
+  100% {background-position: 0% 100%;}
+}
+@keyframes scrollUp {
+  0% {background-position: 0% 0%;}
+  100% {background-position: 0% 100%;}
+}
+@keyframes scrollDown {
+  0% {background-position: 0% 0%;}
+  100% {background-position: 0% 100%;}
 }
 .album1 {
   width: 100%;

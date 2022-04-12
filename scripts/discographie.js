@@ -19,3 +19,38 @@ sectionArr.forEach(function(section){
 .fromTo('.vidYoutube .title-2',{opacity:0, scale:0.5,},{opacity:1, scale:1,})
 .fromTo('.divIframe',{rotation:0},{rotation:360})
 });
+
+const body = document.querySelector('body');
+let isScrolling;
+
+window.addEventListener('scroll', function() {
+    window.clearTimeout(isScrolling);
+    body.classList.add("is-scrolling");
+    
+    isScrolling = setTimeout(function() {
+      body.classList.remove("is-scrolling");
+    }, 1000);
+ });
+
+ gsap.from('.spriteSheetFlo', {
+    scrollTrigger: {
+        trigger:'.spriteSheetFlo',
+        scrub:2,
+        toggleActions: 'restart complete reverse reset',
+        onUpdate: (image) => {
+            if(image.direction== -1) {
+                body.classList.add("scroll-up");
+                body.classList.remove("scroll-down");
+                body.classList.remove("idle");
+            } else if(image.direction== 1) {
+                body.classList.add("idle");
+                body.classList.remove("scroll-up");
+                body.classList.remove("scroll-down");
+            }else {
+                body.classList.add("scroll-down");
+                body.classList.remove("scroll-up");
+                body.classList.remove("idle");
+            }
+        }
+    },
+});
