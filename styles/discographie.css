@@ -116,28 +116,28 @@ picture {
   background-position: 0% 0%;
   object-fit: contain;
 }
-.spriteSheetFlo .idle .scroll-down .scroll-up{
+/*.spriteSheetFlo .idle .scroll-down .scroll-up{
   animation:bloc;
-}
+}*/
 .idle .spriteSheetFlo, .scroll-up .scroll-down{
-  animation: idle 1s steps(24) infinite;
+  animation: idle 1s steps(23) infinite;
 }
 .scroll-up.is-scrolling .spriteSheetFlo {
   background-image: url("../img/defHautFlo.png");
   background-size: 100% auto;
   background-position: 0% 0%;
-  animation: scrollUp 1s steps(24) infinite;
+  animation: scrollUp 1s steps(23) infinite;
 }
 .scroll-down.is-scrolling .spriteSheetFlo {
   background-image: url("../img/defBasFlo.png");
   background-size: 100% auto;
   background-position: 0% 0%;
-  animation: scrollDown 1s steps(24) infinite;
+  animation: scrollDown 1s steps(23) infinite;
 }
-@keyframes bloc {
+/*@keyframes bloc {
   from {transform:translateY(0%);}
   to {transform:translateY(100%);}
-}
+}*/
 @keyframes idle {
   0% {background-position: 0% 0%;}
   100% {background-position: 0% 100%;}
