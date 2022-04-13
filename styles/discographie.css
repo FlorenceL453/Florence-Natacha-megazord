@@ -102,7 +102,6 @@ footer {
     height: 56.25vw;
   }
 }
-
 picture {
   position: absolute;
   width: 100%;
@@ -117,6 +116,9 @@ picture {
   background-position: 0% 0%;
   object-fit: contain;
 }
+/*.spriteSheetFlo .idle .scroll-down .scroll-up{
+  animation:bloc;
+}*/
 .idle .spriteSheetFlo, .scroll-up .scroll-down{
   animation: idle 1s steps(24) infinite;
 }
@@ -132,6 +134,10 @@ picture {
   background-position: 0% 0%;
   animation: scrollDown 1s steps(24) infinite;
 }
+/*@keyframes bloc {
+  from {transform:translateY(0%);}
+  to {transform:translateY(100%);}
+}*/
 @keyframes idle {
   0% {background-position: 0% 0%;}
   100% {background-position: 0% 100%;}
