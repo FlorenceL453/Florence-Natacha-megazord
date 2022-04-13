@@ -40,13 +40,13 @@ window.addEventListener('scroll', function() {
         toggleActions: 'restart complete reverse reset',
         onUpdate: (image) => {
             if(image.direction== -1) {
-                body.classList.remove("scroll-up");
-                body.classList.add("scroll-down");
+                body.classList.add("scroll-up");
+                body.classList.remove("scroll-down");
                 body.classList.remove("idle");
             } if(image.direction== 1){
                 body.classList.remove("idle");
-                body.classList.add("scroll-up");
-                body.classList.remove("scroll-down");
+                body.classList.remove("scroll-up");
+                body.classList.add("scroll-down");
             }else{
                 body.classList.remove("idle");
                 body.classList.remove("scroll-up");
