@@ -1,0 +1,242 @@
+/*Styles de la page de discography*/
+.txt {
+  font-family: var(--fontTexte);
+  margin: 0px;
+}
+
+.swiper {
+  width: 100vw;
+  height: 100vh;
+}
+
+.img1 {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  object-fit: contain;
+  object-position: 45% 0%;
+}
+.img6 {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  object-fit: contain;
+  object-position: 45% 0%;
+}
+.img5 {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  object-fit: contain;
+  object-position: 45% 0%;
+}
+.img4 {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  object-fit: contain;
+  object-position: 45% 0%;
+}
+.img3 {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  object-fit: contain;
+  object-position: 45% 0%;
+}
+.img2 {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: 45% 0%;
+}
+.swipper {
+  width: 100%;
+  height: 100%;
+}
+.contraste {
+  z-index: 1;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(117, 31, 132, 0.75));
+}
+.un {
+  height: 100%;
+}
+
+.hero a {
+  z-index: 2;
+  position: absolute;
+  bottom: 15%;
+  margin-left: 10%;
+  margin: 0px;
+  scroll-behavior: smooth;
+}
+.hero .btn {
+  z-index: 2;
+  position: absolute;
+  bottom: 40px;
+}
+
+h1 {
+  z-index: 2;
+  position: absolute;
+  bottom: 25%;
+  margin-left: 10%;
+}
+.un p{
+  color: var(--turquoise);
+  z-index: 2;
+  position: absolute;
+  bottom: 20%;
+  left:0;
+  margin-left: 10%;
+  
+}
+footer {
+  z-index: 2;
+  position: relative;
+}
+@media (orientation: landscape) {
+  .hero,
+  .swiper {
+    height: 56.25vw;
+  }
+}
+picture {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bleuFonce);
+}
+.spriteSheetWill{
+  width:420px;
+  height:420px;
+  background-image:url('../img/wil_idle.png');
+  background-size: 100% auto;
+  background-position: 0% 0%;
+  object-fit: contain;
+}
+/*.spriteSheetFlo .idle .scroll-down .scroll-up{
+  animation:bloc;
+}*/
+.idle .spriteSheetWill, .scroll-up .scroll-down{
+  animation: idle 1s steps(23) infinite;
+}
+.scroll-up.is-scrolling .spriteSheetWill {
+  background-image: url("../img/wil_def_haut.png");
+  background-size: 100% auto;
+  background-position: 0% 0%;
+  animation: scrollUp 1s steps(24) infinite;
+}
+.scroll-down.is-scrolling .spriteSheetWill {
+  background-image: url("../img/wil_def_bas.png");
+  background-size: 100% auto;
+  background-position: 0% 0%;
+  animation: scrollDown 1s steps(23) infinite;
+}
+/*@keyframes bloc {
+  from {transform:translateY(0%);}
+  to {transform:translateY(100%);}
+}*/
+@keyframes idle {
+  0% {background-position: 0% 0%;}
+  100% {background-position: 0% 100%;}
+}
+@keyframes scrollUp {
+  0% {background-position: 0% 0%;}
+  100% {background-position: 0% 100%;}
+}
+@keyframes scrollDown {
+  0% {background-position: 0% 0%;}
+  100% {background-position: 0% 100%;}
+}
+.album1 {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0px;
+}
+.album1 img {
+  margin-top: 20px;
+  max-width: 100%;
+  height: auto;
+}
+.album1 a {
+  text-decoration: none;
+  background-color: var(--rose);
+  color: var(--bleu);
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 0.25rem;
+}
+.album1 a:hover {
+  color: var(--turquoise);
+  background-color: var(--rose);
+}
+.album1 .txt {
+  color: white;
+}
+
+.album2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0px;
+}
+.album2 img {
+  margin-top: 20px;
+  max-width: 100%;
+  height: auto;
+}
+.album2 .txt {
+  color: white;
+}
+.album2 a {
+  text-decoration: none;
+  background-color: var(--rose);
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 0.25rem;
+}
+.album3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0px;
+}
+.album3 img {
+  margin-top: 20px;
+  max-width: 100%;
+  height: auto;
+}
+.album3 a {
+  text-decoration: none;
+  background-color: var(--rose);
+  padding-top: 2px;
+  padding-bottom: 6px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 0.25rem;
+}
+.album3 .txt {
+  color: white;
+}
+@media (orientation: horizontal) {
+  .album1 {
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-top: 0;
+  }
+  .album2 {
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-top: 0;
+  }
+  .album3 {
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-top: 0;
+  }
+}
