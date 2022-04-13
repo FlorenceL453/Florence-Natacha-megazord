@@ -123,10 +123,10 @@ picture {
   animation: idle 1s steps(23) infinite;
 }
 .scroll-up.is-scrolling .spriteSheetWill {
-  background-image: url("../img/wil_def_haut.png");
+  background-image: url("../img/wil_def_bas.png"); /*L'animation du défilement haut ne reste pas au milieu du bloc*/
   background-size: 100% auto;
   background-position: 0% 0%;
-  animation: scrollUp 1s steps(24) infinite;
+  animation: scrollUp 1s steps(23) infinite;
 }
 .scroll-down.is-scrolling .spriteSheetWill {
   background-image: url("../img/wil_def_bas.png");
