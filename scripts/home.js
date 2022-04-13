@@ -45,7 +45,7 @@ const sectionsArr = document.querySelectorAll('.contenuP section');
 gsap.from('.anim3D', {
     scrollTrigger: {
         trigger:'.anim3D',
-        scrub:2,
+        scrub:true,
         toggleActions: 'restart complete reverse reset',
         onUpdate: (image) => {
             if(image.direction== -1) {
