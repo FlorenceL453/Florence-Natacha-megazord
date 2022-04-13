@@ -33,9 +33,9 @@ window.addEventListener('scroll', function() {
     }, 1000);
  });
 
- gsap.from('.spriteSheetFlo', {
+ gsap.from('.spriteSheetWill', {
     scrollTrigger: {
-        trigger:'.spriteSheetFlo',
+        trigger:'.spriteSheetWill',
         scrub:true,
         toggleActions: 'restart complete reverse reset',
         onUpdate: (image) => {
@@ -50,4 +50,5 @@ window.addEventListener('scroll', function() {
             }
         }
     },
+    y:'100vw',
 });
