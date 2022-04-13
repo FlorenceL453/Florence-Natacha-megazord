@@ -115,6 +115,7 @@ picture {
   background-size: 100% auto;
   background-position: 0% 0%;
   object-fit: contain;
+  animation:bloc;
 }
 /*.spriteSheetFlo .idle .scroll-down .scroll-up{
   animation:bloc;
@@ -134,10 +135,10 @@ picture {
   background-position: 0% 0%;
   animation: scrollDown 1s steps(23) infinite;
 }
-/*@keyframes bloc {
+@keyframes bloc {
   from {transform:translateY(0%);}
   to {transform:translateY(100%);}
-}*/
+}
 @keyframes idle {
   0% {background-position: 0% 0%;}
   100% {background-position: 0% 100%;}
