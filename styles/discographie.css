@@ -117,7 +117,7 @@ picture {
   background-position: 0% 0%;
   object-fit: contain;
 }
-.idle .spriteSheetFlo{
+.idle .spriteSheetFlo, .scroll-up .scroll-down{
   animation: idle 1s steps(24) infinite;
 }
 .scroll-up.is-scrolling .spriteSheetFlo {
@@ -141,8 +141,8 @@ picture {
   100% {background-position: 0% 100%;}
 }
 @keyframes scrollDown {
-  0% {background-position: 0% 0%;}
-  100% {background-position: 0% 100%;}
+  0% {background-position: 0% 100%;}
+  100% {background-position: 0% 0%;}
 }
 .album1 {
   width: 100%;
