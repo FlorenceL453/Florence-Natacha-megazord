@@ -50,5 +50,5 @@ window.addEventListener('scroll', function() {
             }
         }
     },
-    y:'100vw',
+    y:'100%',
 });
