@@ -37,6 +37,10 @@ window.addEventListener('scroll', function() {
     scrollTrigger: {
         trigger:'.spriteSheetWill',
         scrub:true,
+        pin:true,
+        markers:false,
+        start:'top 25%',
+        end:'bottom 25%',
         toggleActions: 'restart complete reverse reset',
         onUpdate: (image) => {
             if(image.direction== -1) {
@@ -49,6 +53,5 @@ window.addEventListener('scroll', function() {
                 body.classList.remove("scroll-up");
             }
         }
-    },
-    y:'100%',
+    }
 });
