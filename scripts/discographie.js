@@ -40,7 +40,7 @@ window.addEventListener('scroll', function() {
         trigger:'.spriteSheetFlo',
         scrub:true,
         pin:true,
-        markers:true,
+        markers:false,
         start:'top 25%',
         end:'bottom 25%',
         toggleActions: 'restart complete reverse reset',
