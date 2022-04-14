@@ -47,7 +47,7 @@ gsap.to('.anim3D', {
         trigger:'.anim3D',
         scrub:true,
         pin:true,
-        markers:true,
+        markers:false,
         start:'top 50%',
         end:'bottom 50%',
         toggleActions: 'restart complete reverse reset',
