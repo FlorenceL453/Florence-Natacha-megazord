@@ -29,14 +29,20 @@ window.addEventListener('scroll', function() {
     
     isScrolling = setTimeout(function() {
       body.classList.remove("is-scrolling");
+      body.classList.remove("scroll-up");
+      body.classList.remove("scroll-down");
       body.classList.add("idle");
     }, 1000);
  });
 
- gsap.from('.spriteSheetFlo', {
+ gsap.to('.spriteSheetFlo', {
     scrollTrigger: {
         trigger:'.spriteSheetFlo',
         scrub:true,
+        pin:true,
+        markers:true,
+        start:'top 25%',
+        end:'bottom 25%',
         toggleActions: 'restart complete reverse reset',
         onUpdate: (image) => {
             if(image.direction== -1) {
@@ -54,5 +60,5 @@ window.addEventListener('scroll', function() {
             }
         }
     },
-    y:'-100vw',
+    /*y:'-100vw',*/
 });
