@@ -43,11 +43,11 @@ window.addEventListener('scroll', function() {
                 body.classList.add("scroll-up");
                 body.classList.remove("scroll-down");
                 body.classList.remove("idle");
-            } if(image.direction== 1){
+            }/* if(image.direction== 1){
                 body.classList.remove("idle");
                 body.classList.remove("scroll-up");
                 body.classList.add("scroll-down");
-            }else{
+            }*/else{
                 body.classList.remove("idle");
                 body.classList.remove("scroll-up");
                 body.classList.add("scroll-down");
