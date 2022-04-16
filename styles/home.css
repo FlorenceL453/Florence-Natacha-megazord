@@ -163,7 +163,7 @@
   background-position: 0% 0%;
 }
 
-.idle .anim3D {
+.idle .anim3D, .scroll-down .anim3D, .scroll-up .anim3D {
   animation: idle 1s steps(24) infinite;
 }
 
