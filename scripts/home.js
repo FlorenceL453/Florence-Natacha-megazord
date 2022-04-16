@@ -64,5 +64,5 @@ gsap.to('.anim3D', {
         }
     },
     //y:'0vw', L'animation fonctionne, mais en inverse, le scroll-up quand je défile vers le bas et le scroll-down quand je défile vers le haut.
-    y:'100vw',
+    y:'445%',
 });
