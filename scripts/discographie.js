@@ -62,3 +62,27 @@ window.addEventListener('scroll', function() {
     },
     /*y:'-100vw',*/
 });
+
+const btnForm = document.querySelector('.btn');
+const textForm = document.querySelector('.form-text');
+const div = document.querySelector('.paroleChansons');
+const text = document.getElementById('titre').innerHTML;
+
+function envoie(e){
+    e.preventDefault();
+    btnForm.addEventListener('click');
+
+if(textForm !== 0){
+    fetch("https://api.lyrics.ovh/v1/ImagineDragons/`text`")
+    .then((str))
+    .catch((error => parole.insertAdjacentHTML('afterend',"<p> Désolé, les paroles n'ont pu être trouvées. En voici la raison: +'error'</p>")))
+    console.log(str);
+    }
+
+
+    }
+
+
+const newLineToBr = function(str) {
+    return str.replace(/(?:\r\n|\r|\n)/g, '<br>');
+}

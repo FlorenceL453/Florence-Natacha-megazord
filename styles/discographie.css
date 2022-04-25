@@ -240,3 +240,11 @@ picture {
     margin-top: 0;
   }
 }
+.parole{ 
+  height:100%;
+  background-color: white;
+}
+.paroleChansons{
+  width:100%;
+  height:100%;
+}
