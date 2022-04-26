@@ -241,8 +241,8 @@ picture {
   }
 }
 .parole{ 
-  height:100%;
-  background-color: white;
+  position: relative;
+  background-color: var(--bleuFonce);
 }
 .paroleChansons{
   width:100%;

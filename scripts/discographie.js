@@ -73,7 +73,7 @@ function envoie(e){
     btnForm.addEventListener('click');
 
 if(textForm !== 0){
-    fetch("https://api.lyrics.ovh/v1/ImagineDragons/`text`")
+    fetch("https://api.lyrics.ovh/v1/ImagineDragons/"+ text)
     .then((str))
     .catch((error => parole.insertAdjacentHTML('afterend',"<p> Désolé, les paroles n'ont pu être trouvées. En voici la raison: +'error'</p>")))
     console.log(str);
