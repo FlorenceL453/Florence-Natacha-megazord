@@ -198,6 +198,25 @@
   100% {background-position: 0% 100%;}
 }
 
+/*Cacher le libellé du formuliare*/
 .hidden {
   display: none;
+}
+
+/*Changer la couleur des texts du formulaire*/
+.chanson, .txtChanson, .bouton, .txtChanson::placeholder {
+  color: var(--bleu);
+}
+
+/*Style bouton du formulaire*/
+.bouton {
+  margin-left: 20px;
+  background-color: var(--rose);
+  border: none;
+  text-decoration: none;
+}
+
+.bouton:hover {
+  color: var(--turquoise);
+  background-color: var(--rose);
 }

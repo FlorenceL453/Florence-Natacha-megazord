@@ -45,7 +45,7 @@ body {
 }
 
 /*Préparation des balises commun entre les pages*/
-body p {
+body {
   font-family: var(--fontTexte);
   font-size: 18px;
   color: white;
