@@ -144,6 +144,12 @@
   height: 1rem;
 }
 
+/*Augmenter la taille de la barre latérale*/
+.barreLateral {
+  height: 100vw;
+}
+
+
 /*Changer les ronds en lozanges si possible*/
 .swiper-pagination-bullet-active {
   background-color: var(--turquoise);
@@ -158,7 +164,7 @@
   background-position: 0% 0%;
 }
 
-.scroll-up .anim3D, .scroll-down .anim3D {
+.idle .anim3D, .scroll-up .anim3D, .scroll-down .anim3D {
   animation: idle 1s steps(24) infinite;
 }
 

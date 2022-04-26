@@ -38,6 +38,7 @@ const sectionsArr = document.querySelectorAll('.contenuP section');
     
     isScrolling = setTimeout(function() {
       body.classList.remove("is-scrolling");
+      body.classList.add("idle");
     }, 1000);
  });
 
@@ -45,11 +46,11 @@ const sectionsArr = document.querySelectorAll('.contenuP section');
 gsap.to('.anim3D', {
     scrollTrigger: {
         trigger:'.anim3D',
-        scrub:true,
-        pin:true,
+        scrub:4,
+        //pin:true,
         markers:false,
-        start:'top 50%',
-        end:'bottom 50%',
+        start:'top 0%',
+        end:'bottom 100%',
         toggleActions: 'restart complete reverse reset',
         onUpdate: (image) => {
             if(image.direction== -1) {
@@ -63,4 +64,5 @@ gsap.to('.anim3D', {
     },
     //y:'0vw', L'animation fonctionne, mais en inverse, le scroll-up quand je défile vers le bas et le scroll-down quand je défile vers le haut.
     //y:'100%',
+    y:'445%',
 });
