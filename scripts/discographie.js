@@ -68,21 +68,22 @@ const textForm = document.querySelector('.form-text');
 const div = document.querySelector('.paroleChansons');
 const text = document.getElementById('titre').innerHTML;
 
+const newLineToBr = function(str) {
+    return str.replace(/(?:\r\n|\r|\n)/g, '<br>');
+}
+
 function envoie(e){
     e.preventDefault();
     btnForm.addEventListener('click');
 
 if(textForm !== 0){
-    fetch("https://api.lyrics.ovh/v1/ImagineDragons/"+ text)
+    fetch("https://api.lyrics.ovh/v1/Imagine Dragons/"+ text)
     .then((str))
-    .catch((error => parole.insertAdjacentHTML('afterend',"<p> Désolé, les paroles n'ont pu être trouvées. En voici la raison: +'error'</p>")))
+    .catch((error => div.insertAdjacentHTML('afterend',"<p> Désolé, les paroles n'ont pu être trouvées. En voici la raison: +'error'</p>")))
     console.log(str);
+    
+    str.insertAdjacentHTML('afterend',last);
     }
 
-
-    }
-
-
-const newLineToBr = function(str) {
-    return str.replace(/(?:\r\n|\r|\n)/g, '<br>');
+    
 }
