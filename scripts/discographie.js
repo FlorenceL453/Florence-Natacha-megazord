@@ -70,22 +70,22 @@ const text = document.getElementById('titre').innerHTML;
 
 
 
-function envoie(e){
-    e.preventDefault();
-    btnForm.addEventListener('click');
+    btnForm.addEventListener('click',function(e){;
+        e.preventDefault();
+    if(textForm !== 0){
+        fetch("https://api.lyrics.ovh/v1/ImagineDragons/+'text'")
+        .then((data)=> data.json())
+        .then((data)=>{
+        console.log(lyrics);
+        div.insertAdjacentHTML('afterend','<p>data</p>');
+        const newLineToBr = function(str) {
+            return str.replace(/(?:\r\n|\r|\n)/g, '<br>');
+        }
+        })
+        .catch((error => div.insertAdjacentHTML('afterend',"<p> Désolé, les paroles n'ont pu être trouvées. En voici la raison: +'error'</p>")))
+        //console.log(str);
+        
+        
+        }
 
-if(textForm !== 0){
-    fetch("https://api.lyrics.ovh/v1/Imagine Dragons/"+ text)
-    .then((data)=> data.json())
-    .then((parole)=>{
-    console.log(parole);
-    div.insertAdjacentHTML('afterend',last);
-    })
-    //.catch((error => div.insertAdjacentHTML('afterend',"<p> Désolé, les paroles n'ont pu être trouvées. En voici la raison: +'error'</p>")))
-    //console.log(str);
-    
-    
-    }
-
-    
-}
+    });
