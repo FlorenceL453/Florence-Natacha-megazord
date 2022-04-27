@@ -66,3 +66,29 @@ gsap.to('.anim3D', {
     //y:'100%',
     y:'445%',
 });
+
+//Variable bouton du formulaire
+const btnForm = document.querySelector('.bouton');
+let txtChanson = document.querySelector('.txtChanson');
+let blockForm = document.querySelector('.parolesChansons');
+let titreChanson = document.querySelector('.titrechanson');
+
+//Écouter le click du bouton du form
+btnForm.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    //Condition qui vérifie que le champs de text n'est pas vide
+    if (txtChanson !== '') {
+        //Faire un fecth et concanténer nom groupe de musique / et contenu du champs de recherche
+        fetch("https://api.lyrics.ovh/v1/imagine-dragons/zero")
+        .then((data) => data.json())
+        .then((data) => {
+            console.log(data);
+
+            //Code pour ne pas afficher les paroles sur une seule ligne
+            const newLineToBr = function(str) {
+                return str.replace(/(?:\r\n|\r|\n)/g, '<br>');
+            }
+        })
+    }
+});

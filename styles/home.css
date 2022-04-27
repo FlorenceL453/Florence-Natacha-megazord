@@ -204,7 +204,7 @@
 }
 
 /*Changer la couleur des texts du formulaire*/
-.chanson, .txtChanson, .bouton, .txtChanson::placeholder {
+.titrechanson, .txtChanson, .bouton, .txtChanson::placeholder {
   color: var(--bleu);
 }
 
