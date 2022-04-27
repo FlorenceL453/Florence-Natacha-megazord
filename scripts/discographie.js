@@ -78,12 +78,13 @@ if(textForm !== 0){
     fetch("https://api.lyrics.ovh/v1/Imagine Dragons/"+ text)
     .then((data)=> data.json())
     .then((parole)=>{
-        
+    console.log(parole);
+    div.insertAdjacentHTML('afterend',last);
     })
     //.catch((error => div.insertAdjacentHTML('afterend',"<p> Désolé, les paroles n'ont pu être trouvées. En voici la raison: +'error'</p>")))
     //console.log(str);
     
-    str.insertAdjacentHTML('afterend',last);
+    
     }
 
     
