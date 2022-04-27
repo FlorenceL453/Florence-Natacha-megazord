@@ -72,6 +72,8 @@ const btnForm = document.querySelector('.bouton');
 let txtChanson = document.querySelector('.txtChanson');
 let blockForm = document.querySelector('.parolesChansons');
 let titreChanson = document.querySelector('.titrechanson');
+let placeholder = document.querySelector('.txtChanson placeholder')
+//console.log(placeholder);
 
 //Écouter le click du bouton du form
 btnForm.addEventListener('click', function (e) {
@@ -82,13 +84,15 @@ btnForm.addEventListener('click', function (e) {
         //Faire un fecth et concanténer nom groupe de musique / et contenu du champs de recherche
         fetch("https://api.lyrics.ovh/v1/imagine-dragons/zero")
         .then((data) => data.json())
-        .then((data) => {
-            console.log(data);
+        .then((lyrics) => {
+            console.log(lyrics);
 
             //Code pour ne pas afficher les paroles sur une seule ligne
             const newLineToBr = function(str) {
                 return str.replace(/(?:\r\n|\r|\n)/g, '<br>');
             }
         })
+    } else {
+        console.log('error: invalid input');
     }
 });
