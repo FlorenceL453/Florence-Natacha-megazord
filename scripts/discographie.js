@@ -73,8 +73,8 @@ const text = document.getElementById('titre');
     btnForm.addEventListener('click',function(e){
         e.preventDefault();
     if(textForm !== ''){
-        //fetch("https://api.lyrics.ovh/v1/imagine-dragons/demons")
-        fetch("https://api.lyrics.ovh/v1/imagine-dragons/titre") //encoure
+        fetch("https://api.lyrics.ovh/v1/imagine-dragons/demons")
+        //fetch("https://api.lyrics.ovh/v1/imagine-dragons/'text'")
         .then((data) => data.json())
         .then((parole) =>{
         console.log(parole.lyrics);
