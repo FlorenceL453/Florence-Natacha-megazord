@@ -84,13 +84,19 @@ btnForm.addEventListener('click', function (e) {
         //Faire un fecth et concanténer nom groupe de musique / et contenu du champs de recherche
         fetch("https://api.lyrics.ovh/v1/imagine-dragons/zero")
         .then((data) => data.json())
-        .then((lyrics) => {
-            console.log(lyrics);
+        .then((paroles) => {
+            console.log(paroles.lyrics);
 
             //Code pour ne pas afficher les paroles sur une seule ligne
             const newLineToBr = function(str) {
                 return str.replace(/(?:\r\n|\r|\n)/g, '<br>');
             }
+
+            //Instruction 7, passer les données du fetch dans la fonction newLineToBr
+            paroles = newLineToBr(paroles.lyrics);
+
+            //Ajauter le contenu dans le div blockForm
+            blockForm.innerHTML = paroles;
         })
     } else {
         console.log('error: invalid input');
