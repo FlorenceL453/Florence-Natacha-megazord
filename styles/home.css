@@ -198,6 +198,15 @@
   100% {background-position: 0% 100%;}
 }
 
+/*Style arrière-plan*/
+.sectionParoles {
+  width: 100%;
+  background-color: var(--bleuFonce);
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 /*Cacher le libellé du formuliare*/
 .hidden {
   display: none;
