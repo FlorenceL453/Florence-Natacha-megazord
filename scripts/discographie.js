@@ -66,14 +66,15 @@ window.addEventListener('scroll', function() {
 const btnForm = document.querySelector('.button');
 const textForm = document.querySelector('.form-text');
 const div = document.querySelector('.paroleChansons');
-//const text = document.getElementById('titre');
+const text = document.getElementById('titre');
 
 
 
     btnForm.addEventListener('click',function(e){
         e.preventDefault();
     if(textForm !== ''){
-        fetch("https://api.lyrics.ovh/v1/imagine-dragons/demons")
+        //fetch("https://api.lyrics.ovh/v1/imagine-dragons/demons")
+        fetch("https://api.lyrics.ovh/v1/imagine-dragons/titre") //encoure
         .then((data) => data.json())
         .then((parole) =>{
         console.log(parole.lyrics);
@@ -81,6 +82,10 @@ const div = document.querySelector('.paroleChansons');
         const newLineToBr = function(str) {
             return str.replace(/(?:\r\n|\r|\n)/g, '<br>');
         }
+
+            parole = newLineToBr(parole.lyrics);
+
+            div.innerHTML= parole;
         })
         //.catch((error => div.insertAdjacentHTML('afterend',"<p> Désolé, les paroles n'ont pu être trouvées. En voici la raison: +'error'</p>")))
         //console.log(str);
