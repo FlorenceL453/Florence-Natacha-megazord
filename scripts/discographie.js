@@ -63,26 +63,26 @@ window.addEventListener('scroll', function() {
     /*y:'-100vw',*/
 });
 
-const btnForm = document.querySelector('.btn');
+const btnForm = document.querySelector('.button');
 const textForm = document.querySelector('.form-text');
 const div = document.querySelector('.paroleChansons');
-const text = document.getElementById('titre').innerHTML;
+//const text = document.getElementById('titre');
 
 
 
-    btnForm.addEventListener('click',function(e){;
+    btnForm.addEventListener('click',function(e){
         e.preventDefault();
-    if(textForm !== 0){
-        fetch("https://api.lyrics.ovh/v1/ImagineDragons/+'text'")
-        .then((data)=> data.json())
-        .then((data)=>{
-        console.log(lyrics);
-        div.insertAdjacentHTML('afterend','<p>data</p>');
+    if(textForm !== ''){
+        fetch("https://api.lyrics.ovh/v1/imagine-dragons/demons")
+        .then((data) => data.json())
+        .then((parole) =>{
+        console.log(parole.lyrics);
+        //div.insertAdjacentHTML('afterend',newLineToBr);
         const newLineToBr = function(str) {
             return str.replace(/(?:\r\n|\r|\n)/g, '<br>');
         }
         })
-        .catch((error => div.insertAdjacentHTML('afterend',"<p> Désolé, les paroles n'ont pu être trouvées. En voici la raison: +'error'</p>")))
+        //.catch((error => div.insertAdjacentHTML('afterend',"<p> Désolé, les paroles n'ont pu être trouvées. En voici la raison: +'error'</p>")))
         //console.log(str);
         
         
