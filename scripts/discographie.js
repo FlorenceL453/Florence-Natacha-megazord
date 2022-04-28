@@ -66,14 +66,15 @@ window.addEventListener('scroll', function() {
 const btnForm = document.querySelector('.button');
 const textForm = document.querySelector('.form-text');
 const div = document.querySelector('.paroleChansons');
-//const text = document.getElementById('titre');
+const text = document.getElementById('titre');
 
 
 
     btnForm.addEventListener('click',function(e){
         e.preventDefault();
     if(textForm !== ''){
-        fetch("https://api.lyrics.ovh/v1/imagine-dragons/demons")
+        //fetch("https://api.lyrics.ovh/v1/imagine-dragons/demons")
+        fetch("https://api.lyrics.ovh/v1/imagine-dragons/titre") //encoure
         .then((data) => data.json())
         .then((parole) =>{
         console.log(parole.lyrics);
