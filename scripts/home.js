@@ -105,7 +105,11 @@ btnForm.addEventListener('click', function (e) {
             //Ajouter le contenu dans le div blockForm
             blockForm.innerHTML = paroles;
         })
-    } else {
-        console.log('error: invalid input');
+        //Attraper l'erreur quand la promesse est brisée et afficher un message d'erreur
+        .catch(error => {
+
+            //Insérer le message d'erreur dans le div des paroles avec la raison de l'erreur(error)
+            blockForm.textContent = ("Désolé, les paroles n'ont pas pu être trouvées. En voici la raison: " + error);
+        });
     }
 });
