@@ -3,7 +3,7 @@ gsap.registerPlugin(ScrollTrigger);
 const sectionsArr = document.querySelectorAll('.contenuP section');
  sectionsArr.forEach(function(sectionP){
     gsap.timeline({
-        duration:2,
+        duration:1,
         scrollTrigger: {
             markers: false,
             start: 'top 50%',
