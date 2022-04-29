@@ -78,14 +78,12 @@ let placeholder = document.querySelector('.txtChanson placeholder')
 //Écouter le click du bouton du form
 btnForm.addEventListener('click', function (e) {
     e.preventDefault();
-
-    //txtChanson.innerHTML = txtChanson.value;
-    //console.log(txtChanson.innerHTML);
+    e.cancelable;
 
     //Condition qui vérifie que le champs de text n'est pas vide
     if (txtChanson !== '') {
         //Faire un fecth et concanténer nom groupe de musique / et contenu du champs de recherche
-        //zero avec minuscule fonctionne et birds aussi en minuscule
+        //zero et birds fonctionnent en minuscules et en majuscules
         fetch(`https://api.lyrics.ovh/v1/imagine-dragons/${txtChanson.value}`)
         .then(data => data.json())
         .then(paroles => {
@@ -98,15 +96,12 @@ btnForm.addEventListener('click', function (e) {
 
             //Instruction 7, passer les données du fetch dans la fonction newLineToBr
             paroles = newLineToBr(paroles.lyrics);
-            
-            txtChanson.addEventListener('change', function () {
                 
-                //Changer le titre de la chanson pour la valeur contenu dans la valeur du input txtChanson
-                titreChanson.textContent = txtChanson.value;
+            //Changer le titre de la chanson pour la valeur contenu dans la valeur du input txtChanson
+            titreChanson.textContent = txtChanson.value;
 
-                //Enlever la classe hidden pour afficher le Titre de la chanson
-                titreChanson.classList.remove('hidden');
-            });
+            //Enlever la classe hidden pour afficher le Titre de la chanson
+            titreChanson.classList.remove('hidden');
             
             //Ajouter le contenu dans le div blockForm
             blockForm.innerHTML = paroles;
