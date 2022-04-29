@@ -217,6 +217,11 @@
   color: var(--bleu);
 }
 
+/*Changer la taille du font pour celle des noms des membres*/
+.titrechanson {
+  font-size: 25px;
+}
+
 /*Style bouton du formulaire*/
 .bouton {
   margin-left: 20px;

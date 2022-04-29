@@ -78,7 +78,6 @@ let placeholder = document.querySelector('.txtChanson placeholder')
 //Écouter le click du bouton du form
 btnForm.addEventListener('click', function (e) {
     e.preventDefault();
-    e.cancelable;
 
     //Condition qui vérifie que le champs de text n'est pas vide
     if (txtChanson !== '') {
