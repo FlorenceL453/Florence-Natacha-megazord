@@ -72,8 +72,7 @@ const btnForm = document.querySelector('.bouton');
 let txtChanson = document.querySelector('.txtChanson');
 let blockForm = document.querySelector('.parolesChansons');
 let titreChanson = document.querySelector('.titrechanson');
-let placeholder = document.querySelector('.txtChanson placeholder')
-//console.log(txtChanson);
+
 
 //Écouter le click du bouton du form
 btnForm.addEventListener('click', function (e) {
