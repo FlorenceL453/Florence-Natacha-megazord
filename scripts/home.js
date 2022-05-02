@@ -68,6 +68,7 @@ gsap.to('.anim3D', {
 });
 
 //Variable bouton du formulaire
+let formChanson = document.querySelector('#formChanson');
 const btnForm = document.querySelector('.bouton');
 let txtChanson = document.querySelector('.txtChanson');
 let blockForm = document.querySelector('.parolesChansons');
@@ -75,7 +76,7 @@ let titreChanson = document.querySelector('.titrechanson');
 
 
 //Écouter le click du bouton du form
-btnForm.addEventListener('click', function (e) {
+formChanson.addEventListener('submit', function (e) {
     e.preventDefault();
 
     //Condition qui vérifie que le champs de text n'est pas vide
