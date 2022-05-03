@@ -73,12 +73,11 @@ const text = document.getElementById('titre');
     btnForm.addEventListener('click',function(e){
         e.preventDefault();
     if(textForm !== ''){
-        fetch("https://api.lyrics.ovh/v1/imagine-dragons/demons")
-        //fetch("https://api.lyrics.ovh/v1/imagine-dragons/'text'")
+    fetch(`https://api.lyrics.ovh/v1/imagine-dragons/${text.value}`)
+    //chansons qui fonctionne: demons, thunder, believer
         .then((data) => data.json())
         .then((parole) =>{
         console.log(parole.lyrics);
-        //div.insertAdjacentHTML('afterend',newLineToBr);
         const newLineToBr = function(str) {
             return str.replace(/(?:\r\n|\r|\n)/g, '<br>');
         }
