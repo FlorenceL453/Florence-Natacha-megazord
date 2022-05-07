@@ -35,7 +35,6 @@ const sectionsArr = document.querySelectorAll('.contenuP section');
  window.addEventListener('scroll', function() {
     window.clearTimeout(isScrolling);
     body.classList.add("is-scrolling");
-    body.classList.remove('idle');
     
     isScrolling = setTimeout(function() {
       body.classList.remove("is-scrolling");
