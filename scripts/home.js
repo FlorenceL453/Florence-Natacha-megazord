@@ -6,8 +6,8 @@ const sectionsArr = document.querySelectorAll('.contenuP section');
         duration:1,
         scrollTrigger: {
             markers: false,
-            start: 'top 75%',
-            end: '50% 75%',
+            start: 'top 50%',
+            end: 'bottom 75%',
             toggleActions: 'restart complete reverse reset',
             trigger: sectionP,
         },
@@ -39,7 +39,7 @@ const sectionsArr = document.querySelectorAll('.contenuP section');
     
     isScrolling = setTimeout(function() {
       body.classList.remove("is-scrolling");
-      body.classList.add('idle');
+      body.classList.add("idle");
     }, 1000);
  });
 
@@ -63,6 +63,68 @@ gsap.to('.anim3D', {
             }
         }
     },
-    //y:'0vw', L'animation fonctionne, mais en inverse, le scroll-up quand je défile vers le bas et le scroll-down quand je défile vers le haut.
-    y:'445%',
+    y:'445%'
+});
+
+//Variable bouton du formulaire
+let formChanson = document.querySelector('#formChanson');
+const btnForm = document.querySelector('.bouton');
+
+let txtChanson = document.querySelector('.txtChanson');
+let blockForm = document.querySelector('.parolesChansons');
+let titreChanson = document.querySelector('.titrechanson');
+
+let loadingText = document.querySelector('.loadingText');
+let loadingIcon = document.querySelector('.loadingIcon');
+
+
+//Écouter la soumission du form pour que le preventDefault fonctionne (La soumission du form (click ou enter) ne rafraîchit pas la page)
+formChanson.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    //À la soumission du formulaire faire apparaître le spinner et le loading...
+    loadingIcon.classList.remove('hidden');
+    loadingText.classList.remove('hidden');
+
+    //Condition qui vérifie que le champs de text n'est pas vide
+    if (txtChanson !== '') {
+        //Faire un fecth et concanténer nom groupe de musique / et contenu du champs de recherche
+        //zero et birds fonctionnent en minuscules et en majuscules
+        fetch(`https://api.lyrics.ovh/v1/imagine-dragons/${txtChanson.value}`)
+        .then(data => data.json())
+        .then(paroles => {
+            console.log(paroles.lyrics);
+
+            //Cacher le spinner et son text quand l'information est récupérée par le fetch et affichée sur la page
+            loadingIcon.classList.add('hidden');
+            loadingText.classList.add('hidden');
+
+            //Code pour ne pas afficher les paroles sur une seule ligne
+            const newLineToBr = function(str) {
+                return str.replace(/(?:\r\n|\r|\n)/g, '<br>');
+            }
+
+            //Instruction 7, passer les données du fetch dans la fonction newLineToBr
+            paroles = newLineToBr(paroles.lyrics);
+                
+            //Changer le titre de la chanson pour la valeur contenu dans la valeur du input txtChanson
+            titreChanson.textContent = txtChanson.value;
+
+            //Enlever la classe hidden pour afficher le Titre de la chanson
+            titreChanson.classList.remove('hidden');
+            
+            //Ajouter le contenu dans le div blockForm
+            blockForm.innerHTML = paroles;
+        })
+        //Attraper l'erreur quand la promesse est brisée et afficher un message d'erreur
+        .catch(error => {
+
+            //Les cacher aussi quand le message d'erreur s'affiche
+            loadingIcon.classList.add('hidden');
+            loadingText.classList.add('hidden');
+
+            //Insérer le message d'erreur dans le div des paroles avec la raison de l'erreur(error)
+            blockForm.textContent = ("Désolé, les paroles n'ont pas pu être trouvées. En voici la raison: " + error);
+        });
+    }
 });

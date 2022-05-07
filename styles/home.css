@@ -144,6 +144,12 @@
   height: 1rem;
 }
 
+/*Augmenter la taille de la barre latérale*/
+.barreLateral {
+  height: 100vw;
+}
+
+
 /*Changer les ronds en lozanges si possible*/
 .swiper-pagination-bullet-active {
   background-color: var(--turquoise);
@@ -163,7 +169,7 @@
   background-position: 0% 0%;
 }
 
-.idle .anim3D, .scroll-down .anim3D, .scroll-up .anim3D {
+.idle .anim3D, .scroll-up .anim3D, .scroll-down .anim3D {
   animation: idle 1s steps(24) infinite;
 }
 
@@ -197,3 +203,48 @@
   100% {background-position: 0% 100%;}
 }
 
+/*Style arrière-plan*/
+.sectionParoles {
+  width: 100%;
+  background-color: var(--bleuFonce);
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/*Cacher le libellé du formuliare*/
+.hidden {
+  display: none;
+}
+
+/*Changer la couleur des texts du formulaire*/
+.titrechanson, .txtChanson, .bouton, .txtChanson::placeholder {
+  color: var(--bleu);
+}
+
+/*Changer la taille du font pour celle des noms des membres*/
+.titrechanson {
+  font-size: 25px;
+}
+
+/*Style bouton du formulaire*/
+.bouton {
+  margin-left: 20px;
+  background-color: var(--rose);
+  border: none;
+  text-decoration: none;
+}
+
+.bouton:hover {
+  color: var(--turquoise);
+  background-color: var(--rose);
+}
+
+.loadingIcon {
+  margin-left: 20px;
+}
+
+/*Séparer le text du spinner*/
+.loadingText {
+  margin-left: 10px;
+}
