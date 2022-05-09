@@ -207,9 +207,7 @@
 .sectionParoles {
   width: 100%;
   background-color: var(--bleuFonce);
-  padding-left: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px;
 }
 
 /*Cacher le libellé du formuliare*/
