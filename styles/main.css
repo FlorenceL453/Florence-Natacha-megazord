@@ -151,6 +151,21 @@ nav {
   background-color: var(--rose);
 }
 
+/*Bouton de la section des paroles*/
+/*Style bouton du formulaire*/
+.bouton {
+  margin-left: 20px;
+  color: var(--bleu);
+  background-color: var(--rose);
+  border: none;
+  text-decoration: none;
+}
+
+.bouton:hover {
+  color: var(--turquoise);
+  background-color: var(--rose);
+}
+
 /*Mettre la taille du div qui contient le iframe*/
 .divIframe {
   aspect-ratio: 16 / 9;

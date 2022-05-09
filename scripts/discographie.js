@@ -63,7 +63,7 @@ window.addEventListener('scroll', function() {
     /*y:'-100vw',*/
 });
 
-const btnForm = document.querySelector('.button');
+const btnForm = document.querySelector('.bouton');
 const textForm = document.querySelector('.form-text');
 const div = document.querySelector('.paroleChansons');
 const text = document.getElementById('titre');

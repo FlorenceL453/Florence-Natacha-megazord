@@ -218,26 +218,13 @@
 }
 
 /*Changer la couleur des texts du formulaire*/
-.titrechanson, .txtChanson, .bouton, .txtChanson::placeholder {
+.titrechanson, .txtChanson, .txtChanson::placeholder {
   color: var(--bleu);
 }
 
 /*Changer la taille du font pour celle des noms des membres*/
 .titrechanson {
   font-size: 25px;
-}
-
-/*Style bouton du formulaire*/
-.bouton {
-  margin-left: 20px;
-  background-color: var(--rose);
-  border: none;
-  text-decoration: none;
-}
-
-.bouton:hover {
-  color: var(--turquoise);
-  background-color: var(--rose);
 }
 
 .loadingIcon {
