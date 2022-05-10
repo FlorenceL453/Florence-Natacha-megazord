@@ -240,15 +240,21 @@ picture {
     margin-top: 0;
   }
 }
-.parole{ 
+
+/*Marge top pour séparer la section des paroles de celle de la vidéo*/
+.parole { 
   position: relative;
   width: 100%;
   background-color: var(--bleuFonce);
-  margin-top: 20px;
   padding: 20px;
+  margin: 10px;
 }
-.paroleChansons{
-  text-align: center;
+.paroleChansons {
   margin-top: 30px;
   padding-bottom: 30px;
+}
+
+/*Changer la couleur du placeholder du formulaire de la section des paroles*/
+.form-text, .form-text::placeholder {
+  color: var(--bleu);
 }

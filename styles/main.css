@@ -142,6 +142,7 @@ nav {
 
 /*Ajouter cette classe sur tous les boutons pour le style: couleur et padding*/
 .btn-savoir-plus {
+  margin: 5% 0%;
   color: var(--bleu);
   background-color: var(--rose);
   border: none;
