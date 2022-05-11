@@ -63,33 +63,32 @@ window.addEventListener('scroll', function() {
     /*y:'-100vw',*/
 });
 
+let formParole = document.querySelector('#formParole');
 const btnForm = document.querySelector('.bouton');
+
 const textForm = document.querySelector('.form-text');
 const div = document.querySelector('.paroleChansons');
 const text = document.getElementById('titre');
 
+let titreChanson = document.querySelector('.titrechanson');
 let loadingText = document.querySelector('.loadingText');
 let loadingIcon = document.querySelector('.loadingIcon');
 
+formParole.addEventListener('submit', function (e) {
+    e.preventDefault();
 
-loadingIcon.classList.add('hidden');
-loadingText.classList.add('hidden');
-
-    btnForm.addEventListener('click',function(e){
-        e.preventDefault();
-
+    loadingIcon.classList.remove('hidden');
+    loadingText.classList.remove('hidden');
        
-
     if(textForm !== ''){
     fetch(`https://api.lyrics.ovh/v1/imagine-dragons/${text.value}`)
     //chansons qui fonctionne: demons, thunder, believer
         .then((data) => data.json())
-        .then((parole) =>{
+        .then((parole) => {
         console.log(parole.lyrics);
         
-        loadingIcon.classList.remove('hidden');
-        loadingText.classList.remove('hidden');
-
+        loadingIcon.classList.add('hidden');
+        loadingText.classList.add('hidden');
 
         const newLineToBr = function(str) {
             return str.replace(/(?:\r\n|\r|\n)/g, '<br>');
@@ -97,18 +96,29 @@ loadingText.classList.add('hidden');
 
             parole = newLineToBr(parole.lyrics);
 
-            btnForm.textForm = textForm.value;
+            //Pourquoi tu as fait ça?
+            //btnForm.textForm = textForm.value;
 
+            //Changer le titre de la chanson pour la valeur contenu dans la valeur du input textForm
+            titreChanson.textContent = textForm.value;
 
+            //Enlever la classe hidden pour afficher le Titre de la chanson
+            titreChanson.classList.remove('hidden');
+
+            //Ajouter le contenu dans le div
             div.innerHTML= parole;
         })
         
-        .catch((error => div.textContent =("Désolé, les paroles n'ont pu être trouvées. En voici la raison:" + error )));
-        //console.log(str);
+        .catch(error => {
+
+            //Cacher le titre et le spinner quand le catch attrape une erreur
+            titreChanson.classList.add('hidden');
             loadingIcon.classList.add('hidden');
             loadingText.classList.add('hidden');
 
+            div.textContent =("Désolé, les paroles n'ont pu être trouvées. En voici la raison:" + error );
+        });
         
-        }
+    }
 
-    });
+});

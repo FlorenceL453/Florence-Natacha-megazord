@@ -119,6 +119,7 @@ formChanson.addEventListener('submit', function (e) {
         .catch(error => {
 
             //Les cacher aussi quand le message d'erreur s'affiche
+            titreChanson.classList.add('hidden');
             loadingIcon.classList.add('hidden');
             loadingText.classList.add('hidden');
 
