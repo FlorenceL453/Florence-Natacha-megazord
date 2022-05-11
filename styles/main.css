@@ -122,43 +122,20 @@ nav {
   margin-bottom: 0%;
 }
 
-/*Titre de la section des membres du groupe*/
+/*Titre de toutes les sections de la page*/
 .title-2 {
   font-family: var(--fontTitre);
   color: var(--turquoise);
-  font-size: 45px;
+  font-size: 40px;
   margin-top: 20px; /*Pour séparer chaque section du contenu principal*/
 }
 
-/*Titre de la section des images promotionnelles*/
-.title-3 {
-  font-family: var(--fontTitre);
-  color: var(--turquoise);
-  font-size: 40px;
-  margin-top: 20px; 
-}
-
-/*Titre de la section de la vidéo*/
-.title-4 {
-  font-family: var(--fontTitre);
-  color: var(--turquoise);
-  font-size: 35px;
-  margin-top: 20px; 
-}
-
-/*Titre de la section des paroles*/
-.title-5 {
-  font-family: var(--fontTitre);
-  color: var(--turquoise);
-  font-size: 30px;
-  margin-top: 20px; 
-}
-
 /*Style du titre des modals*/
-.title-6 {
+.title-3 {
   font-family: var(--fontTitre);
   color: var(--rose);
   font-size: 30px;
+  margin-top: 20px; 
 }
 
 /*Ajouter cette classe sur tous les boutons pour le style: couleur et padding*/
