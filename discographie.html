@@ -188,7 +188,12 @@
         </section>
         <section class="parole">
           <h2 class="title-2">Des paroles qui inspirent</h2>
-          <input type="text" class="form-text" id="titre" placeholder="Titre d'une chanson"> <input type="button" class="btn btn-secondary bouton" value="Rechercher">
+          <form><input type="text" class="form-text" id="titre" placeholder="Titre d'une chanson"></input> <input
+              type="button" class="btn btn-secondary bouton" value="Rechercher"></input><span
+              class="hidden loadingIcon spinner-grow spinner-grow-sm text-info" role="status"
+              aria-hidden="true"></span><span class="hidden loadingText text-info">Loading...</span><label
+              class="hidden titrechanson" name="titreChanson">Titre d'une
+              chanson</label></form>
           <!--chansons Believer, Démons-->
           <div class="paroleChansons"></div>
         </section>

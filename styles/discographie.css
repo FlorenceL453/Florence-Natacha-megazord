@@ -258,3 +258,6 @@ picture {
 .form-text, .form-text::placeholder {
   color: var(--bleu);
 }
+.hidden {
+  display: none;
+}

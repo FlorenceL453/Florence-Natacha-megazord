@@ -68,28 +68,44 @@ const textForm = document.querySelector('.form-text');
 const div = document.querySelector('.paroleChansons');
 const text = document.getElementById('titre');
 
+let loadingText = document.querySelector('.loadingText');
+let loadingIcon = document.querySelector('.loadingIcon');
 
 
     btnForm.addEventListener('click',function(e){
         e.preventDefault();
+
+        loadingIcon.classList.remove('hidden');
+        loadingText.classList.remove('hidden');
+
     if(textForm !== ''){
     fetch(`https://api.lyrics.ovh/v1/imagine-dragons/${text.value}`)
     //chansons qui fonctionne: demons, thunder, believer
         .then((data) => data.json())
         .then((parole) =>{
         console.log(parole.lyrics);
+        
+        loadingIcon.classList.add('hidden');
+        loadingText.classList.add('hidden');
+
+
         const newLineToBr = function(str) {
             return str.replace(/(?:\r\n|\r|\n)/g, '<br>');
         }
 
             parole = newLineToBr(parole.lyrics);
 
+            btnForm.textForm = textForm.value;
+
+
             div.innerHTML= parole;
         })
         
-        .catch((error => divForm.textContent("Désolé, les paroles n'ont pu être trouvées. En voici la raison:" + error )));
+        .catch((error => div.textContent =("Désolé, les paroles n'ont pu être trouvées. En voici la raison:" + error )));
         //console.log(str);
-        
+            loadingIcon.classList.add('hidden');
+            loadingText.classList.add('hidden');
+
         
         }
 
