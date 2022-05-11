@@ -12,7 +12,10 @@ sectionArr.forEach(function(section){
             trigger: section,
     },
 })
-.fromTo('.title-2',{opacity:0, scale:0.5,},{opacity:1, scale:1,})
+.fromTo(section.querySelector('.album1.title-2'),{opacity:0, scale:0.5,},{opacity:1, scale:1,})
+.fromTo(section.querySelector('.album2 .title-2'),{opacity:0, scale:0.5,},{opacity:1, scale:1,})
+.fromTo(section.querySelector('.album3 .title-2'),{opacity:0, scale:0.5,},{opacity:1, scale:1,})
+.fromTo(section.querySelector('.vivYoutube .title-2'),{opacity:0, scale:0.5,},{opacity:1, scale:1,})
 .fromTo('.title-1 ',{rotation:0},{rotation:360})
 .fromTo(' section img',{rotation:0},{rotation:360,})
 .fromTo('p.txt.text-header',{rotation:0},{rotation:360})
