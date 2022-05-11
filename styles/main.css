@@ -107,12 +107,14 @@ nav {
   height: 100%;
 }
 
+/*Le titre dans le header de la page*/
 .title-1 {
   font-family: var(--fontTitre);
   color: white;
   font-size: 50px;
 }
 
+/*Le logo dans la barre de navigation*/
 .logo {
   font-family: var(--fontTitre);
   font-size: 30px;
@@ -120,24 +122,43 @@ nav {
   margin-bottom: 0%;
 }
 
+/*Titre de la section des membres du groupe*/
 .title-2 {
   font-family: var(--fontTitre);
   color: var(--turquoise);
-  font-size: 40px;
+  font-size: 45px;
   margin-top: 20px; /*Pour séparer chaque section du contenu principal*/
 }
 
-/*Sous-titre dans la section principale de la page*/
+/*Titre de la section des images promotionnelles*/
 .title-3 {
+  font-family: var(--fontTitre);
+  color: var(--turquoise);
+  font-size: 40px;
+  margin-top: 20px; 
+}
+
+/*Titre de la section de la vidéo*/
+.title-4 {
+  font-family: var(--fontTitre);
+  color: var(--turquoise);
+  font-size: 35px;
+  margin-top: 20px; 
+}
+
+/*Titre de la section des paroles*/
+.title-5 {
+  font-family: var(--fontTitre);
+  color: var(--turquoise);
+  font-size: 30px;
+  margin-top: 20px; 
+}
+
+/*Style du titre des modals*/
+.title-6 {
   font-family: var(--fontTitre);
   color: var(--rose);
   font-size: 30px;
-}
-/*Variante du sous-titre dans la section principale de la page*/
-.title-4 {
-  font-family: var(--fontTitre);
-  color: var(--bleu);
-  font-size: 25px;
 }
 
 /*Ajouter cette classe sur tous les boutons pour le style: couleur et padding*/
