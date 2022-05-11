@@ -72,11 +72,13 @@ let loadingText = document.querySelector('.loadingText');
 let loadingIcon = document.querySelector('.loadingIcon');
 
 
+loadingIcon.classList.add('hidden');
+loadingText.classList.add('hidden');
+
     btnForm.addEventListener('click',function(e){
         e.preventDefault();
 
-        loadingIcon.classList.remove('hidden');
-        loadingText.classList.remove('hidden');
+       
 
     if(textForm !== ''){
     fetch(`https://api.lyrics.ovh/v1/imagine-dragons/${text.value}`)
@@ -85,8 +87,8 @@ let loadingIcon = document.querySelector('.loadingIcon');
         .then((parole) =>{
         console.log(parole.lyrics);
         
-        loadingIcon.classList.add('hidden');
-        loadingText.classList.add('hidden');
+        loadingIcon.classList.remove('hidden');
+        loadingText.classList.remove('hidden');
 
 
         const newLineToBr = function(str) {
