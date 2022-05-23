@@ -49,6 +49,7 @@ const sectionsArr = document.querySelectorAll('.contenuP section');
 gsap.to('.anim3D', {
     scrollTrigger: {
         trigger:'.anim3D',
+        duration:2,
         scrub:4,
         //pin:true,
         markers:false,
