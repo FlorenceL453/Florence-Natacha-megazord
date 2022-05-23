@@ -142,12 +142,6 @@
   height: 1rem;
 }
 
-/*Augmenter la taille de la barre latérale*/
-.barreLateral {
-  height: 100vw;
-}
-
-
 /*Changer les ronds en lozanges si possible*/
 .swiper-pagination-bullet-active {
   background-color: var(--turquoise);
@@ -158,10 +152,14 @@
   height: 100vw;
 }
 
+/*Largeur de 100% et hauteur a auto pour rendre les sprites sheets responsive*/
+.anim3D {
+  width: 100%;
+  height: auto;
+}
+
 /*Mettre la première sprite sheet defilement bas*/
 .anim3D {
-  width: 420px;
-  height: 420px;
   background-image: url("../img/nat_idle.png");
   background-size: 100% auto;
   background-position: 0% 0%;
@@ -183,6 +181,25 @@
   background-size: 100% auto;
   background-position: 0% 0%;
   animation: scrollDown 1s steps(24) infinite;
+}
+
+/*Aspect ratio et hauteur du div des animations des sprites sheet*/
+.barreLateral, .anim3D {
+  aspect-ratio: 1 / 1;
+}
+
+/*Backup si le aspect-ratio ne marche pas (anciens version des navigateurs)*/
+@supports not (aspect-ratio: 1 / 1) {
+  .barreLateral::before, .anim3D::before {
+    float: left;
+    padding-top: 56.25%;
+    content: "";
+  }
+  .barreLateral::after, .anim3D::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
 }
 
 /*Faire les animations des sprites sheet*/

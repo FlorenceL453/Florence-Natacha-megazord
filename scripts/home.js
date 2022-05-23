@@ -65,7 +65,7 @@ gsap.to('.anim3D', {
             }
         }
     },
-    y:'445%'
+    y:'800%'
 });
 
 //Variable bouton du formulaire
