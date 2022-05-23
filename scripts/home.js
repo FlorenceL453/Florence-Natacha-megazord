@@ -13,17 +13,20 @@ const sectionsArr = document.querySelectorAll('.contenuP section');
         },
     })
     //Animer tous les titres2
-    .fromTo(sectionP.querySelector('.titreCarteMembre .title-2'), {x:'-100%', opacity:0, rotation:180}, {x:'0%', opacity:1, rotation:0, ease:'back'})
+    .fromTo(sectionP.querySelector('.titreCarteMembre .title-2'), {x:'-100%', opacity:0}, {x:'0%', opacity:1, ease:'back'})
     //Animer les cartes
-    .fromTo(sectionP.querySelectorAll('.carteMembre'), {x:'-100%', opacity:0, rotation:360}, {x:'0%', opacity:1, rotation:0, ease:'back'}, '<')
+    .fromTo(sectionP.querySelector('.dan'), {x:'-100%', opacity:0, rotation:360}, {x:'0%', opacity:1, rotation:0, ease:'back'}, '<')
+    .fromTo(sectionP.querySelector('.wayne'), {x:'-100%', opacity:0, rotation:360}, {x:'0%', opacity:1, rotation:0, ease:'back'}, '+=0.25')
+    .fromTo(sectionP.querySelector('.daniel'), {x:'-100%', opacity:0, rotation:360}, {x:'0%', opacity:1, rotation:0, ease:'back'}, '+=0.50')
+    .fromTo(sectionP.querySelector('.ben'), {x:'-100%', opacity:0, rotation:360}, {x:'0%', opacity:1, rotation:0, ease:'back'}, '+=0.75')
     
     //Animer le titre du carrousel
-    .fromTo(sectionP.querySelector('.Carrousel .title-2'), {x:'-100%', opacity:0, rotation:180}, {x:'0%', opacity:1, rotation:0, ease:'back'}, '+=0.25')
+    .fromTo(sectionP.querySelector('.Carrousel .title-2'), {x:'-100%', opacity:0}, {x:'0%', opacity:1, ease:'back'}, '+=0.25')
     //Animer le carrousel
     .fromTo(sectionP.querySelector('.Carrousel .swiper'), {x:'-100%', opacity:0, rotation:360}, {x:'0%', opacity:1, rotation:0, ease:'back'}, '<')
     
     //Animer le titre de la section vidéo
-    .fromTo(sectionP.querySelector('.video .title-2'), {x:'-100%', opacity:0, rotation:180}, {x:'0%', opacity:1, rotation:0, ease:'back'}, '+=0.50')
+    .fromTo(sectionP.querySelector('.video .title-2'), {x:'-100%', opacity:0}, {x:'0%', opacity:1, ease:'back'}, '+=0.50')
     //Animer la vidéo
     .fromTo(sectionP.querySelector('.video .divIframe'), {x:'-100%', opacity:0, rotation:360}, {x:'0%', opacity:1, rotation:0, ease:'back'}, '<')
  });
